@@ -1,6 +1,11 @@
 # Zybo Test OBC
 
-This repository contains a Vivado project to setup a Zybo Z7-20 to reflect the interfaces on the Xiphos Q7 OBC so a test hardware environment is available.
+This repository contains Vivado and Petaliux projects to setup a Zybo Z7-20 to reflect the interfaces on the Xiphos Q7 OBC so a test hardware environment is available.
+
+## Requirements
+
+- Xilinx Vivado 2022.2
+- Petalinux 2022.2
 
 ## Interfaces
 
@@ -8,8 +13,8 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 
 - MIO I2C0 [14:15] (Daedalus)
 	- Pmod JF pins 9:10
-- AXI I2C0 [:] (Hyperion)
-- AXI I2C1 [:] (S-Band)
+- EMIO I2C1 [:] (Hyperion)
+- AXI I2C0 [:] (S-Band)
 - MIO SPI1 [10:12] (GPS)
 	- Pmod JF pins 2:4
 - AXI SPI0 [:] (S-Band)
