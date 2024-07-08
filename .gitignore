@@ -10,12 +10,13 @@
 !.gitignore
 !*.md
 
-#################
-##     Petalinux
-#################
+# Exported hardware files
+# Only versioned files are exported
+!zybo_obc_v*.xsa
 
-!petalinux
-!*.xsa
+# Digilent vivado libraries
+!vivado-library
+!vivado-boards
 
 ###########################################################################
 ##	VIVADO
