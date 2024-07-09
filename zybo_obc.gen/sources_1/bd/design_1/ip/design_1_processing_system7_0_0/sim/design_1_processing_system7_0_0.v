@@ -58,6 +58,12 @@
 module design_1_processing_system7_0_0 (
 CAN0_PHY_TX, 
 CAN0_PHY_RX, 
+I2C1_SDA_I, 
+I2C1_SDA_O, 
+I2C1_SDA_T, 
+I2C1_SCL_I, 
+I2C1_SCL_O, 
+I2C1_SCL_T, 
 UART0_TX, 
 UART0_RX, 
 USB0_PORT_INDCTL, 
@@ -128,6 +134,12 @@ PS_PORB
 );
 output CAN0_PHY_TX;
 input CAN0_PHY_RX;
+input I2C1_SDA_I;
+output I2C1_SDA_O;
+output I2C1_SDA_T;
+input I2C1_SCL_I;
+output I2C1_SCL_O;
+output I2C1_SCL_T;
 output UART0_TX;
 input UART0_RX;
 output [1 : 0] USB0_PORT_INDCTL;

@@ -2,12 +2,12 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Mon Jun 24 13:52:35 2024
-# Process ID: 1973988
-# Current directory: /home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1
+# Start of session at: Mon Jul  8 15:32:50 2024
+# Process ID: 32514
+# Current directory: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1
 # Command line: vivado -log design_1_rst_ps7_0_50M_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rst_ps7_0_50M_2.tcl
-# Log file: /home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/design_1_rst_ps7_0_50M_2.vds
-# Journal file: /home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/vivado.jou
-# Running On: ALBERTASAT-03, OS: Linux, CPU Frequency: 3600.000 MHz, CPU Physical cores: 4, Host memory: 33610 MB
+# Log file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/design_1_rst_ps7_0_50M_2.vds
+# Journal file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/vivado.jou
+# Running On: mothership, OS: Linux, CPU Frequency: 4233.650 MHz, CPU Physical cores: 4, Host memory: 33578 MB
 #-----------------------------------------------------------
 source design_1_rst_ps7_0_50M_2.tcl -notrace

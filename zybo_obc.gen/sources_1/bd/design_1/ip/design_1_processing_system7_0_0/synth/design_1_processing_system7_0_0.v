@@ -60,6 +60,12 @@ AXI_GP1_THREAD_ID_WIDTH=12,C_NUM_F2P_INTR_INPUTS=1,C_IRQ_F2P_MODE=DIRECT,C_DQ_WI
 module design_1_processing_system7_0_0 (
   CAN0_PHY_TX,
   CAN0_PHY_RX,
+  I2C1_SDA_I,
+  I2C1_SDA_O,
+  I2C1_SDA_T,
+  I2C1_SCL_I,
+  I2C1_SCL_O,
+  I2C1_SCL_T,
   UART0_TX,
   UART0_RX,
   USB0_PORT_INDCTL,
@@ -133,6 +139,18 @@ module design_1_processing_system7_0_0 (
 output wire CAN0_PHY_TX;
 (* X_INTERFACE_INFO = "xilinx.com:interface:can:1.0 CAN_0 RX" *)
 input wire CAN0_PHY_RX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SDA_I" *)
+input wire I2C1_SDA_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SDA_O" *)
+output wire I2C1_SDA_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SDA_T" *)
+output wire I2C1_SDA_T;
+(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SCL_I" *)
+input wire I2C1_SCL_I;
+(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SCL_O" *)
+output wire I2C1_SCL_O;
+(* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SCL_T" *)
+output wire I2C1_SCL_T;
 (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 TxD" *)
 output wire UART0_TX;
 (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_0 RxD" *)
@@ -224,7 +242,7 @@ input wire [1 : 0] M_AXI_GP0_RRESP;
  4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RDATA" *)
 input wire [31 : 0] M_AXI_GP0_RDATA;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 5e+07, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK" *)
 output wire FCLK_CLK0;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -396,12 +414,12 @@ inout wire PS_PORB;
     .I2C0_SCL_I(1'B0),
     .I2C0_SCL_O(),
     .I2C0_SCL_T(),
-    .I2C1_SDA_I(1'B0),
-    .I2C1_SDA_O(),
-    .I2C1_SDA_T(),
-    .I2C1_SCL_I(1'B0),
-    .I2C1_SCL_O(),
-    .I2C1_SCL_T(),
+    .I2C1_SDA_I(I2C1_SDA_I),
+    .I2C1_SDA_O(I2C1_SDA_O),
+    .I2C1_SDA_T(I2C1_SDA_T),
+    .I2C1_SCL_I(I2C1_SCL_I),
+    .I2C1_SCL_O(I2C1_SCL_O),
+    .I2C1_SCL_T(I2C1_SCL_T),
     .PJTAG_TCK(1'B0),
     .PJTAG_TMS(1'B0),
     .PJTAG_TDI(1'B0),

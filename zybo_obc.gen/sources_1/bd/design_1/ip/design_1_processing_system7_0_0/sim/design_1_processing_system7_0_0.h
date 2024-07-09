@@ -82,6 +82,12 @@ public:
 
   sc_core::sc_out< bool > CAN0_PHY_TX;
   sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< bool > I2C1_SDA_I;
+  sc_core::sc_out< bool > I2C1_SDA_O;
+  sc_core::sc_out< bool > I2C1_SDA_T;
+  sc_core::sc_in< bool > I2C1_SCL_I;
+  sc_core::sc_out< bool > I2C1_SCL_O;
+  sc_core::sc_out< bool > I2C1_SCL_T;
   sc_core::sc_out< bool > UART0_TX;
   sc_core::sc_in< bool > UART0_RX;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;
@@ -188,6 +194,12 @@ public:
 
   sc_core::sc_out< bool > CAN0_PHY_TX;
   sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< bool > I2C1_SDA_I;
+  sc_core::sc_out< bool > I2C1_SDA_O;
+  sc_core::sc_out< bool > I2C1_SDA_T;
+  sc_core::sc_in< bool > I2C1_SCL_I;
+  sc_core::sc_out< bool > I2C1_SCL_O;
+  sc_core::sc_out< bool > I2C1_SCL_T;
   sc_core::sc_out< bool > UART0_TX;
   sc_core::sc_in< bool > UART0_RX;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;
@@ -294,6 +306,12 @@ public:
 
   sc_core::sc_out< bool > CAN0_PHY_TX;
   sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< bool > I2C1_SDA_I;
+  sc_core::sc_out< bool > I2C1_SDA_O;
+  sc_core::sc_out< bool > I2C1_SDA_T;
+  sc_core::sc_in< bool > I2C1_SCL_I;
+  sc_core::sc_out< bool > I2C1_SCL_O;
+  sc_core::sc_out< bool > I2C1_SCL_T;
   sc_core::sc_out< bool > UART0_TX;
   sc_core::sc_in< bool > UART0_RX;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;
@@ -402,6 +420,12 @@ public:
 
   sc_core::sc_out< bool > CAN0_PHY_TX;
   sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< bool > I2C1_SDA_I;
+  sc_core::sc_out< bool > I2C1_SDA_O;
+  sc_core::sc_out< bool > I2C1_SDA_T;
+  sc_core::sc_in< bool > I2C1_SCL_I;
+  sc_core::sc_out< bool > I2C1_SCL_O;
+  sc_core::sc_out< bool > I2C1_SCL_T;
   sc_core::sc_out< bool > UART0_TX;
   sc_core::sc_in< bool > UART0_RX;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;
@@ -516,6 +540,12 @@ public:
 
   sc_core::sc_out< bool > CAN0_PHY_TX;
   sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< bool > I2C1_SDA_I;
+  sc_core::sc_out< bool > I2C1_SDA_O;
+  sc_core::sc_out< bool > I2C1_SDA_T;
+  sc_core::sc_in< bool > I2C1_SCL_I;
+  sc_core::sc_out< bool > I2C1_SCL_O;
+  sc_core::sc_out< bool > I2C1_SCL_T;
   sc_core::sc_out< bool > UART0_TX;
   sc_core::sc_in< bool > UART0_RX;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;

@@ -2,18 +2,18 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Mon Jun 24 13:52:35 2024
-# Process ID: 1973988
-# Current directory: /home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1
+# Start of session at: Mon Jul  8 15:32:50 2024
+# Process ID: 32514
+# Current directory: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1
 # Command line: vivado -log design_1_rst_ps7_0_50M_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rst_ps7_0_50M_2.tcl
-# Log file: /home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/design_1_rst_ps7_0_50M_2.vds
-# Journal file: /home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/vivado.jou
-# Running On: ALBERTASAT-03, OS: Linux, CPU Frequency: 3600.000 MHz, CPU Physical cores: 4, Host memory: 33610 MB
+# Log file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/design_1_rst_ps7_0_50M_2.vds
+# Journal file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/vivado.jou
+# Running On: mothership, OS: Linux, CPU Frequency: 4233.650 MHz, CPU Physical cores: 4, Host memory: 33578 MB
 #-----------------------------------------------------------
-Sourcing tcl script '/home/albertasat/.Xilinx/Vivado/Vivado_init.tcl'
 source design_1_rst_ps7_0_50M_2.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1287.746 ; gain = 22.023 ; free physical = 2029 ; free virtual = 23142
-WARNING: [Board 49-151] The current board 'digilentinc.com::zybo-z7-20:1.2' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jacques/Repos/absat/ex3_zybo_obc_config/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jacques/.local/share/Xilinx/Vivado/2022.2/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_rst_ps7_0_50M_2
 Command: synth_design -top design_1_rst_ps7_0_50M_2 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -22,14 +22,14 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1974040
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/albertasat/Development/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-7075] Helper process launched with PID 32647
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2069.766 ; gain = 372.770 ; free physical = 300 ; free virtual = 21409
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1405.467; parent = 1234.145; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3072.559; parent = 2072.738; children = 999.820
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2247.789 ; gain = 371.738 ; free physical = 5564 ; free virtual = 60680
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.415; parent = 1168.386; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3835.809; parent = 2250.762; children = 1585.047
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_2' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/synth/design_1_rst_ps7_0_50M_2.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_2' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/synth/design_1_rst_ps7_0_50M_2.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -39,119 +39,119 @@ INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_2' [/home/albert
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/synth/design_1_rst_ps7_0_50M_2.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/synth/design_1_rst_ps7_0_50M_2.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-3491] module 'SRL16' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
-INFO: [Synth 8-6157] synthesizing module 'SRL16' [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
-INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_50M_2' (0#1) [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/synth/design_1_rst_ps7_0_50M_2.vhd:74]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_50M_2' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/synth/design_1_rst_ps7_0_50M_2.vhd:74]
 WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2141.703 ; gain = 444.707 ; free physical = 428 ; free virtual = 21463
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1405.467; parent = 1234.145; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3141.527; parent = 2141.707; children = 999.820
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2318.727 ; gain = 442.676 ; free physical = 5707 ; free virtual = 60827
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.415; parent = 1168.386; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3903.777; parent = 2318.730; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2156.547 ; gain = 459.551 ; free physical = 428 ; free virtual = 21462
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1405.467; parent = 1234.145; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3156.371; parent = 2156.551; children = 999.820
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2333.570 ; gain = 457.520 ; free physical = 5647 ; free virtual = 60767
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.415; parent = 1168.386; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3918.621; parent = 2333.574; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2156.547 ; gain = 459.551 ; free physical = 428 ; free virtual = 21462
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1405.467; parent = 1234.145; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3156.371; parent = 2156.551; children = 999.820
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2333.570 ; gain = 457.520 ; free physical = 5637 ; free virtual = 60756
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.415; parent = 1168.386; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3918.621; parent = 2333.574; children = 1585.047
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2162.484 ; gain = 0.000 ; free physical = 422 ; free virtual = 21457
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2339.508 ; gain = 0.000 ; free physical = 5590 ; free virtual = 60710
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'U0'
-Parsing XDC File [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/albertasat/Development/zybo_obc/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'U0'
-Parsing XDC File [/home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc] for cell 'U0'
+Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc] for cell 'U0'
+Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2310.297 ; gain = 0.000 ; free physical = 260 ; free virtual = 21295
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2488.320 ; gain = 0.000 ; free physical = 5454 ; free virtual = 60586
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2310.297 ; gain = 0.000 ; free physical = 260 ; free virtual = 21295
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2488.320 ; gain = 0.000 ; free physical = 5453 ; free virtual = 60585
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/albertasat/Development/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 522 ; free virtual = 21519
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1405.467; parent = 1234.145; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5664 ; free virtual = 60804
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.415; parent = 1168.386; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 522 ; free virtual = 21519
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1405.467; parent = 1234.145; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5664 ; free virtual = 60804
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.415; parent = 1168.386; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 522 ; free virtual = 21519
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1405.467; parent = 1234.145; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5659 ; free virtual = 60800
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.415; parent = 1168.386; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 480 ; free virtual = 21478
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1405.467; parent = 1234.145; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5622 ; free virtual = 60763
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.415; parent = 1168.386; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -187,33 +187,33 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GE
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 449 ; free virtual = 21450
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1405.467; parent = 1234.145; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5614 ; free virtual = 60764
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.415; parent = 1168.386; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 368 ; free virtual = 21375
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1485.791; parent = 1315.075; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5482 ; free virtual = 60644
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.200; parent = 1245.191; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 368 ; free virtual = 21375
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1486.045; parent = 1315.329; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5481 ; free virtual = 60644
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.337; parent = 1245.328; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 368 ; free virtual = 21374
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1486.205; parent = 1315.489; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5470 ; free virtual = 60633
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.649; parent = 1245.641; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -231,49 +231,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 335 ; free virtual = 21342
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1486.322; parent = 1315.606; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5219 ; free virtual = 60382
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.860; parent = 1245.852; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 334 ; free virtual = 21341
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1486.322; parent = 1315.606; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5219 ; free virtual = 60382
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.860; parent = 1245.852; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 333 ; free virtual = 21340
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1486.322; parent = 1315.606; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5218 ; free virtual = 60381
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.860; parent = 1245.852; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 332 ; free virtual = 21339
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1486.322; parent = 1315.606; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5217 ; free virtual = 60380
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.860; parent = 1245.852; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 331 ; free virtual = 21337
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1486.322; parent = 1315.606; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5217 ; free virtual = 60379
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.860; parent = 1245.852; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 330 ; free virtual = 21337
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1486.322; parent = 1315.606; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5216 ; free virtual = 60379
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.860; parent = 1245.852; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -301,20 +301,20 @@ Report Cell Usage:
 |10    |FDSE  |     4|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 329 ; free virtual = 21336
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1486.322; parent = 1315.606; children = 171.322
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3278.105; parent = 2278.285; children = 999.820
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5216 ; free virtual = 60378
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1398.860; parent = 1245.852; children = 153.029
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4041.355; parent = 2456.309; children = 1585.047
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2310.297 ; gain = 459.551 ; free physical = 375 ; free virtual = 21381
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2310.297 ; gain = 613.301 ; free physical = 374 ; free virtual = 21380
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2488.320 ; gain = 457.520 ; free physical = 5251 ; free virtual = 60414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2488.320 ; gain = 612.270 ; free physical = 5251 ; free virtual = 60413
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2310.297 ; gain = 0.000 ; free physical = 372 ; free virtual = 21378
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2488.320 ; gain = 0.000 ; free physical = 5251 ; free virtual = 60413
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2310.297 ; gain = 0.000 ; free physical = 407 ; free virtual = 21414
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2488.320 ; gain = 0.000 ; free physical = 5289 ; free virtual = 60451
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 9 instances were transformed.
   FDR => FDRE: 8 instances
@@ -322,12 +322,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 Synth Design complete, checksum: c293278
 INFO: [Common 17-83] Releasing license: Synthesis
-47 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+50 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 2310.297 ; gain = 942.863 ; free physical = 608 ; free virtual = 21615
-INFO: [Common 17-1381] The checkpoint '/home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/design_1_rst_ps7_0_50M_2.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 2488.320 ; gain = 943.863 ; free physical = 5490 ; free virtual = 60653
+INFO: [Common 17-1381] The checkpoint '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/design_1_rst_ps7_0_50M_2.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_rst_ps7_0_50M_2, cache-ID = 8b4b549bafc3aa2f
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/albertasat/Development/zybo_obc/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/design_1_rst_ps7_0_50M_2.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_rst_ps7_0_50M_2_synth_1/design_1_rst_ps7_0_50M_2.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_rst_ps7_0_50M_2_utilization_synth.rpt -pb design_1_rst_ps7_0_50M_2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jun 24 13:53:20 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  8 15:33:31 2024...
