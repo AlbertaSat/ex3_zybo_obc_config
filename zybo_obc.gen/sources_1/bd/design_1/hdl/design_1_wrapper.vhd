@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
---Date        : Mon Jul  8 19:15:22 2024
+--Date        : Wed Jul 31 21:50:27 2024
 --Host        : mothership running 64-bit Nobara release 37 (Thirty Seven)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
