@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Wed Jul 31 21:52:25 2024
-| Host         : mothership running 64-bit Nobara release 37 (Thirty Seven)
+| Date         : Thu Aug 29 14:24:26 2024
+| Host         : ALBERTASAT-03 running 64-bit Ubuntu 20.04.6 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : xc7z020clg400-1
@@ -92,7 +92,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   18 |     0 |          0 |       125 | 14.40 |
+| Bonded IOB                  |   34 |     0 |          0 |       125 | 27.20 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         4 |  0.00 |
@@ -148,8 +148,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| IBUF     |   15 |                  IO |
-| OBUFT    |   12 |                  IO |
+| IBUF     |   31 |                  IO |
+| OBUFT    |   28 |                  IO |
 | OBUF     |    3 |                  IO |
 +----------+------+---------------------+
 
@@ -161,13 +161,13 @@ Warning! LUT value is adjusted to account for LUT combining.
 |             Ref Name            | Used |
 +---------------------------------+------+
 | design_1_xbar_0                 |    1 |
-| design_1_util_reduced_logic_0_0 |    1 |
 | design_1_rst_ps7_0_50M_2        |    1 |
 | design_1_processing_system7_0_0 |    1 |
 | design_1_axi_uartlite_0_0       |    1 |
 | design_1_axi_quad_spi_1_0       |    1 |
 | design_1_axi_quad_spi_0_0       |    1 |
 | design_1_axi_iic_0_0            |    1 |
+| design_1_axi_gpio_0_0           |    1 |
 | design_1_auto_pc_0              |    1 |
 +---------------------------------+------+
 

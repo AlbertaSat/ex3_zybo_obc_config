@@ -2,16 +2,21 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Jul  2 13:32:10 2024
-# Process ID: 27009
-# Current directory: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1
+# Start of session at: Thu Aug 29 13:49:43 2024
+# Process ID: 1733734
+# Current directory: /home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1
 # Command line: vivado -log design_1_axi_iic_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_iic_0_0.tcl
-# Log file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/design_1_axi_iic_0_0.vds
-# Journal file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/vivado.jou
-# Running On: mothership, OS: Linux, CPU Frequency: 4352.099 MHz, CPU Physical cores: 4, Host memory: 33578 MB
+# Log file: /home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/design_1_axi_iic_0_0.vds
+# Journal file: /home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/vivado.jou
+# Running On: ALBERTASAT-03, OS: Linux, CPU Frequency: 4000.687 MHz, CPU Physical cores: 4, Host memory: 33610 MB
 #-----------------------------------------------------------
+Sourcing tcl script '/home/albertasat/.Xilinx/Vivado/Vivado_init.tcl'
 source design_1_axi_iic_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1476.828 ; gain = 0.023 ; free physical = 11196 ; free virtual = 66914
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.840 ; gain = 32.023 ; free physical = 466 ; free virtual = 20648
+WARNING: [Board 49-151] The current board 'digilentinc.com::zybo-z7-20:1.2' is from a local repo. The vivado install has a corresponding board with version greater than or equal to the local repo board. Please use boards from vivado install to avoid any upgrade/migrate issues
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/albertasat/ex3_zybo_obc_config/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/albertasat/Development/Vivado/2022.2/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_iic_0_0
 Command: synth_design -top design_1_axi_iic_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -20,14 +25,14 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 27075
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-7075] Helper process launched with PID 1734043
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/albertasat/Development/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2210.848 ; gain = 372.738 ; free physical = 10352 ; free virtual = 66073
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.410; parent = 1224.127; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3798.863; parent = 2213.820; children = 1585.043
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2079.797 ; gain = 371.738 ; free physical = 264 ; free virtual = 17811
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.508; parent = 1217.849; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3053.547; parent = 2083.770; children = 969.777
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/synth/design_1_axi_iic_0_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/synth/design_1_axi_iic_0_0.vhd:91]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -43,188 +48,188 @@ INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/jacques/Re
 	Parameter C_STATIC_TIMING_REG_WIDTH bound to: 0 - type: integer 
 	Parameter C_TIMING_REG_WIDTH bound to: 32 - type: integer 
 	Parameter C_DEFAULT_VALUE bound to: 8'b00000000 
-INFO: [Synth 8-3491] module 'axi_iic' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6832' bound to instance 'U0' of component 'axi_iic' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/synth/design_1_axi_iic_0_0.vhd:184]
-INFO: [Synth 8-638] synthesizing module 'axi_iic' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6906]
-INFO: [Synth 8-638] synthesizing module 'iic' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6210]
-INFO: [Synth 8-638] synthesizing module 'axi_ipif_ssp1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5677]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized20' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized20' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized21' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized21' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized22' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized22' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized23' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized23' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized24' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized24' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized25' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized25' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized26' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized26' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized27' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized27' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized28' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized28' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized29' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized29' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized30' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized30' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized31' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized31' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized32' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized32' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized33' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized33' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized34' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized34' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized35' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized35' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'interrupt_control' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
-INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
-INFO: [Synth 8-638] synthesizing module 'soft_reset' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:141]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
-INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:295]
-INFO: [Synth 8-256] done synthesizing module 'soft_reset' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:141]
-INFO: [Synth 8-256] done synthesizing module 'axi_ipif_ssp1' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5677]
-INFO: [Synth 8-638] synthesizing module 'reg_interface' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:1685]
-INFO: [Synth 8-256] done synthesizing module 'reg_interface' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:1685]
-INFO: [Synth 8-638] synthesizing module 'filter' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5001]
-INFO: [Synth 8-638] synthesizing module 'debounce' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:1315]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-3491] module 'axi_iic' declared at '/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6832' bound to instance 'U0' of component 'axi_iic' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/synth/design_1_axi_iic_0_0.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'axi_iic' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6906]
+INFO: [Synth 8-638] synthesizing module 'iic' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6210]
+INFO: [Synth 8-638] synthesizing module 'axi_ipif_ssp1' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5677]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized20' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized20' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized21' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized21' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized22' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized22' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized23' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized23' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized24' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized24' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized25' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized25' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized26' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized26' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized27' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized27' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized28' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized28' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized29' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized29' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized30' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized30' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized31' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized31' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized32' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized32' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized33' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized33' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized34' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized34' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized35' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized35' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'soft_reset' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:141]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:272]
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:295]
+INFO: [Synth 8-256] done synthesizing module 'soft_reset' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'axi_ipif_ssp1' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5677]
+INFO: [Synth 8-638] synthesizing module 'reg_interface' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:1685]
+INFO: [Synth 8-256] done synthesizing module 'reg_interface' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:1685]
+INFO: [Synth 8-638] synthesizing module 'filter' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5001]
+INFO: [Synth 8-638] synthesizing module 'debounce' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:1315]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'debounce' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:1315]
-INFO: [Synth 8-256] done synthesizing module 'filter' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5001]
-INFO: [Synth 8-638] synthesizing module 'iic_control' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:2919]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
-INFO: [Synth 8-638] synthesizing module 'shift8' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:897]
-INFO: [Synth 8-256] done synthesizing module 'shift8' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:897]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n__parameterized0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n__parameterized0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
-INFO: [Synth 8-256] done synthesizing module 'iic_control' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:2919]
-INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
-INFO: [Synth 8-3491] module 'FDR' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38695' bound to instance 'Data_Exists_DFF' of component 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:543]
-INFO: [Synth 8-6157] synthesizing module 'FDR' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38695]
-INFO: [Synth 8-6155] done synthesizing module 'FDR' (0#1) [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38695]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
-INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830]
-INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (0#1) [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830]
-INFO: [Synth 8-3491] module 'XORCY' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
-INFO: [Synth 8-6157] synthesizing module 'XORCY' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539]
-INFO: [Synth 8-6155] done synthesizing module 'XORCY' (0#1) [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539]
-INFO: [Synth 8-3491] module 'FDRE' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
-INFO: [Synth 8-6157] synthesizing module 'FDRE' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
-INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
-INFO: [Synth 8-3491] module 'XORCY' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
-INFO: [Synth 8-3491] module 'FDRE' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
-INFO: [Synth 8-3491] module 'XORCY' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
-INFO: [Synth 8-3491] module 'FDRE' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
-INFO: [Synth 8-3491] module 'XORCY' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
-INFO: [Synth 8-3491] module 'FDRE' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-6157] synthesizing module 'SRL16E' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
-INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
-INFO: [Synth 8-638] synthesizing module 'dynamic_master' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5220]
-INFO: [Synth 8-256] done synthesizing module 'dynamic_master' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5220]
-INFO: [Synth 8-638] synthesizing module 'SRL_FIFO__parameterized0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
-INFO: [Synth 8-3491] module 'FDR' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38695' bound to instance 'Data_Exists_DFF' of component 'FDR' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:543]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
-INFO: [Synth 8-3491] module 'XORCY' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
-INFO: [Synth 8-3491] module 'FDRE' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
-INFO: [Synth 8-3491] module 'XORCY' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
-INFO: [Synth 8-3491] module 'FDRE' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
-INFO: [Synth 8-3491] module 'XORCY' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
-INFO: [Synth 8-3491] module 'FDRE' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
-INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
-INFO: [Synth 8-3491] module 'XORCY' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
-INFO: [Synth 8-3491] module 'FDRE' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/jacques/.local/share/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO__parameterized0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
-INFO: [Synth 8-256] done synthesizing module 'iic' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6210]
-INFO: [Synth 8-256] done synthesizing module 'axi_iic' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6906]
-INFO: [Synth 8-256] done synthesizing module 'design_1_axi_iic_0_0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/synth/design_1_axi_iic_0_0.vhd:91]
-WARNING: [Synth 8-6014] Unused sequential element ro_a_reg was removed.  [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:2281]
-WARNING: [Synth 8-6014] Unused sequential element sda_cout_reg_d1_reg was removed.  [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:3669]
-WARNING: [Synth 8-6014] Unused sequential element gen_stop_and_scl_hi_reg was removed.  [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:3890]
-WARNING: [Synth 8-6014] Unused sequential element dynamic_MSMS_d_reg was removed.  [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5281]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:1315]
+INFO: [Synth 8-256] done synthesizing module 'filter' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5001]
+INFO: [Synth 8-638] synthesizing module 'iic_control' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:2919]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
+INFO: [Synth 8-638] synthesizing module 'shift8' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:897]
+INFO: [Synth 8-256] done synthesizing module 'shift8' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:897]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n__parameterized0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n__parameterized0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:740]
+INFO: [Synth 8-256] done synthesizing module 'iic_control' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:2919]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
+INFO: [Synth 8-3491] module 'FDR' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38695' bound to instance 'Data_Exists_DFF' of component 'FDR' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:543]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38695]
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (0#1) [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38695]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (0#1) [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (0#1) [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
+INFO: [Synth 8-638] synthesizing module 'dynamic_master' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5220]
+INFO: [Synth 8-256] done synthesizing module 'dynamic_master' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5220]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO__parameterized0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
+INFO: [Synth 8-3491] module 'FDR' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38695' bound to instance 'Data_Exists_DFF' of component 'FDR' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:543]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:82830' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:560]
+INFO: [Synth 8-3491] module 'XORCY' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136539' bound to instance 'XORCY_I' of component 'XORCY' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:567]
+INFO: [Synth 8-3491] module 'FDRE' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708' bound to instance 'FDRE_I' of component 'FDRE' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:573]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-3491] module 'SRL16E' declared at '/home/albertasat/Development/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644' bound to instance 'SRL16E_I' of component 'SRL16E' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO__parameterized0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:449]
+INFO: [Synth 8-256] done synthesizing module 'iic' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6210]
+INFO: [Synth 8-256] done synthesizing module 'axi_iic' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:6906]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_iic_0_0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/synth/design_1_axi_iic_0_0.vhd:91]
+WARNING: [Synth 8-6014] Unused sequential element ro_a_reg was removed.  [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:2281]
+WARNING: [Synth 8-6014] Unused sequential element sda_cout_reg_d1_reg was removed.  [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:3669]
+WARNING: [Synth 8-6014] Unused sequential element gen_stop_and_scl_hi_reg was removed.  [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:3890]
+WARNING: [Synth 8-6014] Unused sequential element dynamic_MSMS_d_reg was removed.  [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/1439/hdl/axi_iic_v2_1_vh_rfs.vhd:5281]
 WARNING: [Synth 8-7129] Port Cr[0] in module dynamic_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Cr[1] in module dynamic_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Cr[2] in module dynamic_master is either unconnected or has no load
@@ -327,70 +332,70 @@ WARNING: [Synth 8-7129] Port Bus2IP_Data[13] in module soft_reset is either unco
 WARNING: [Synth 8-7129] Port Bus2IP_Data[14] in module soft_reset is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2296.785 ; gain = 458.676 ; free physical = 10427 ; free virtual = 66149
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.410; parent = 1224.127; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3881.832; parent = 2296.789; children = 1585.043
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2168.734 ; gain = 460.676 ; free physical = 575 ; free virtual = 18124
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.508; parent = 1217.849; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3138.516; parent = 2168.738; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2311.629 ; gain = 473.520 ; free physical = 10427 ; free virtual = 66149
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.410; parent = 1224.127; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3896.676; parent = 2311.633; children = 1585.043
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2186.547 ; gain = 478.488 ; free physical = 594 ; free virtual = 18142
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.508; parent = 1217.849; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3156.328; parent = 2186.551; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2311.629 ; gain = 473.520 ; free physical = 10427 ; free virtual = 66149
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.410; parent = 1224.127; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3896.676; parent = 2311.633; children = 1585.043
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2186.547 ; gain = 478.488 ; free physical = 594 ; free virtual = 18142
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.508; parent = 1217.849; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3156.328; parent = 2186.551; children = 969.777
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2317.566 ; gain = 0.000 ; free physical = 10419 ; free virtual = 66139
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2192.484 ; gain = 0.000 ; free physical = 580 ; free virtual = 18128
 INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'U0'
-Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'U0'
+Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2469.379 ; gain = 0.000 ; free physical = 10336 ; free virtual = 66059
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2343.297 ; gain = 0.000 ; free physical = 386 ; free virtual = 17934
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   FDR => FDRE: 15 instances
   FDRSE => FDRSE (FDRE, LUT4, VCC): 5 instances
   MUXCY_L => MUXCY: 12 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2469.379 ; gain = 0.000 ; free physical = 10336 ; free virtual = 66059
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2343.297 ; gain = 0.000 ; free physical = 385 ; free virtual = 17933
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jacques/.local/share/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/albertasat/Development/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10403 ; free virtual = 66125
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.410; parent = 1224.127; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 331 ; free virtual = 17905
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.508; parent = 1217.849; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10403 ; free virtual = 66125
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.410; parent = 1224.127; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 331 ; free virtual = 17905
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.508; parent = 1217.849; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10403 ; free virtual = 66125
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.410; parent = 1224.127; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 330 ; free virtual = 17905
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.508; parent = 1217.849; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'scl_state_reg' in module 'iic_control'
@@ -432,9 +437,9 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'scl_state_reg' using encoding 'one-hot' in module 'iic_control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10403 ; free virtual = 66121
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.410; parent = 1224.127; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 378 ; free virtual = 17954
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.508; parent = 1217.849; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -493,33 +498,33 @@ INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SCL_DEBOUNCE/INPUT_DOUBL
 INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SDA_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_iic.
 INFO: [Synth 8-3332] Sequential element (X_IIC/FILTER_I/SDA_DEBOUNCE/INPUT_DOUBLE_REGS/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_iic.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10378 ; free virtual = 66103
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1429.410; parent = 1224.127; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 255 ; free virtual = 17837
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.508; parent = 1217.849; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10279 ; free virtual = 66009
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1539.622; parent = 1334.401; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 236 ; free virtual = 17651
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1463.687; parent = 1308.376; children = 155.659
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10255 ; free virtual = 65986
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1566.247; parent = 1361.026; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 837 ; free virtual = 18220
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1523.076; parent = 1351.944; children = 171.174
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10254 ; free virtual = 65985
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.087; parent = 1361.866; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 903 ; free virtual = 18286
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1523.812; parent = 1352.681; children = 171.174
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -537,49 +542,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10251 ; free virtual = 65982
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.278; parent = 1362.058; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 2849 ; free virtual = 20232
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1646.186; parent = 1437.858; children = 208.327
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10251 ; free virtual = 65982
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.278; parent = 1362.058; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 2849 ; free virtual = 20232
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1646.186; parent = 1437.858; children = 208.327
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10251 ; free virtual = 65982
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.302; parent = 1362.081; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 2849 ; free virtual = 20232
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1646.209; parent = 1437.882; children = 208.327
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10251 ; free virtual = 65982
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.364; parent = 1362.144; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 2849 ; free virtual = 20232
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1646.209; parent = 1437.882; children = 208.327
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10251 ; free virtual = 65982
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.364; parent = 1362.144; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 2849 ; free virtual = 20232
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1646.209; parent = 1437.882; children = 208.327
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10251 ; free virtual = 65982
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.364; parent = 1362.144; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 2849 ; free virtual = 20232
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1646.209; parent = 1437.882; children = 208.327
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -612,20 +617,20 @@ Report Cell Usage:
 |15    |FDSE    |    47|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10251 ; free virtual = 65982
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1567.380; parent = 1362.159; children = 205.283
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4022.410; parent = 2437.367; children = 1585.043
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 2849 ; free virtual = 20232
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1646.209; parent = 1437.882; children = 208.327
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3281.062; parent = 2311.285; children = 969.777
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2469.379 ; gain = 473.520 ; free physical = 10304 ; free virtual = 66035
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2469.379 ; gain = 631.270 ; free physical = 10304 ; free virtual = 66035
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2343.297 ; gain = 478.488 ; free physical = 2903 ; free virtual = 20286
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2343.297 ; gain = 635.238 ; free physical = 2903 ; free virtual = 20286
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2469.379 ; gain = 0.000 ; free physical = 10304 ; free virtual = 66035
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2343.297 ; gain = 0.000 ; free physical = 2901 ; free virtual = 20284
 INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2469.379 ; gain = 0.000 ; free physical = 10356 ; free virtual = 66087
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2343.297 ; gain = 0.000 ; free physical = 2924 ; free virtual = 20308
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 14 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 3 instances
@@ -633,12 +638,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 Synth Design complete, checksum: 5e12308
 INFO: [Common 17-83] Releasing license: Synthesis
-204 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+207 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 2469.379 ; gain = 962.863 ; free physical = 10578 ; free virtual = 66309
-INFO: [Common 17-1381] The checkpoint '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/design_1_axi_iic_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_iic_0_0, cache-ID = 16a1eb5a1ec06169
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 2343.297 ; gain = 965.863 ; free physical = 3147 ; free virtual = 20531
+INFO: [Common 17-1381] The checkpoint '/home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/design_1_axi_iic_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_iic_0_0, cache-ID = 024af6484595aa35
 INFO: [Coretcl 2-1174] Renamed 24 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/design_1_axi_iic_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_iic_0_0_synth_1/design_1_axi_iic_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_iic_0_0_utilization_synth.rpt -pb design_1_axi_iic_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul  2 13:32:51 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 29 13:50:53 2024...

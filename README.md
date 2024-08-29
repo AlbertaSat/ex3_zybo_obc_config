@@ -28,19 +28,19 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 
 - MIO SPI1 [10:13] (GPS)
 	- Pmod JF pins
-		- MOSI: 3
-		- MISO: 4
-		- SCLK: 7
-		- SS: 8
+		- MOSI: 2
+		- MISO: 3
+		- SCLK: 4
+		- SS: 1
 
 Note: AXI SPI has been used instead of putting PS SPI0 through EMIO as it turned out to be too much of a hassle to get it working (multiple slave select lines and such with specific connection requirments for one slave master-mode).
 
 - AXI SPI0 [:] (S-Band)
 	- Pmod JD pins
-		- MOSI: 4
-		- MISO: 5
-		- SCLK: 6
-		- SS: 3
+		- MOSI: 3
+		- MISO: 4
+		- SCLK: 7
+		- SS: 8
 
 - AXI SPI1 (IRIS)
 	- Pmod JC pins
@@ -67,7 +67,10 @@ Note: AXI SPI has been used instead of putting PS SPI0 through EMIO as it turned
 
 ### GPIO
 
-TBD
+16 GPIO pins
+
+Pmod JE -> GPIO_0[0:7]
+Pmod JA -> GPIO_0[8:15]
 
 
 ## IP Blocks:
