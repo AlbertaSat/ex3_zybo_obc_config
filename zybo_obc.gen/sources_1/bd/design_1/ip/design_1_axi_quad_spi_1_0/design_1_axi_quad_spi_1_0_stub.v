@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Thu Aug 29 13:15:07 2024
-// Host        : ALBERTASAT-03 running 64-bit Ubuntu 20.04.6 LTS
+// Date        : Wed Mar 12 15:51:33 2025
+// Host        : mothership running 64-bit Nobara Linux 41 (GNOME Edition)
 // Command     : write_verilog -force -mode synth_stub
-//               /home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_1_0/design_1_axi_quad_spi_1_0_stub.v
+//               /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_1_0/design_1_axi_quad_spi_1_0_stub.v
 // Design      : design_1_axi_quad_spi_1_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -18,8 +18,8 @@ module design_1_axi_quad_spi_1_0(ext_spi_clk, s_axi_aclk, s_axi_aresetn,
   s_axi_awaddr, s_axi_awvalid, s_axi_awready, s_axi_wdata, s_axi_wstrb, s_axi_wvalid, 
   s_axi_wready, s_axi_bresp, s_axi_bvalid, s_axi_bready, s_axi_araddr, s_axi_arvalid, 
   s_axi_arready, s_axi_rdata, s_axi_rresp, s_axi_rvalid, s_axi_rready, io0_i, io0_o, io0_t, io1_i, 
-  io1_o, io1_t, sck_i, sck_o, sck_t, ss_i, ss_o, ss_t, ip2intc_irpt)
-/* synthesis syn_black_box black_box_pad_pin="ext_spi_clk,s_axi_aclk,s_axi_aresetn,s_axi_awaddr[6:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[6:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,io0_i,io0_o,io0_t,io1_i,io1_o,io1_t,sck_i,sck_o,sck_t,ss_i[0:0],ss_o[0:0],ss_t,ip2intc_irpt" */;
+  io1_o, io1_t, spisel, sck_i, sck_o, sck_t, ss_i, ss_o, ss_t, ip2intc_irpt)
+/* synthesis syn_black_box black_box_pad_pin="ext_spi_clk,s_axi_aclk,s_axi_aresetn,s_axi_awaddr[6:0],s_axi_awvalid,s_axi_awready,s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wvalid,s_axi_wready,s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_araddr[6:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rvalid,s_axi_rready,io0_i,io0_o,io0_t,io1_i,io1_o,io1_t,spisel,sck_i,sck_o,sck_t,ss_i[0:0],ss_o[0:0],ss_t,ip2intc_irpt" */;
   input ext_spi_clk;
   input s_axi_aclk;
   input s_axi_aresetn;
@@ -46,6 +46,7 @@ module design_1_axi_quad_spi_1_0(ext_spi_clk, s_axi_aclk, s_axi_aresetn,
   input io1_i;
   output io1_o;
   output io1_t;
+  input spisel;
   input sck_i;
   output sck_o;
   output sck_t;

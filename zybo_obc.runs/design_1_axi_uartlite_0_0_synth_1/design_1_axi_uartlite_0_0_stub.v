@@ -1,8 +1,8 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-// Date        : Thu Aug 29 13:50:42 2024
-// Host        : ALBERTASAT-03 running 64-bit Ubuntu 20.04.6 LTS
+// Date        : Wed Mar 12 15:57:00 2025
+// Host        : mothership running 64-bit Nobara Linux 41 (GNOME Edition)
 // Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_axi_uartlite_0_0_stub.v
 // Design      : design_1_axi_uartlite_0_0

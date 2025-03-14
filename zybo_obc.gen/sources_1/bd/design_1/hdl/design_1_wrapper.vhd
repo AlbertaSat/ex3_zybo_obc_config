@@ -1,8 +1,8 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
---Date        : Thu Aug 29 14:22:10 2024
---Host        : ALBERTASAT-03 running 64-bit Ubuntu 20.04.6 LTS
+--Date        : Wed Mar 12 16:29:38 2025
+--Host        : mothership running 64-bit Nobara Linux 41 (GNOME Edition)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -30,6 +30,8 @@ entity design_1_wrapper is
     DDR_ras_n : inout STD_LOGIC;
     DDR_reset_n : inout STD_LOGIC;
     DDR_we_n : inout STD_LOGIC;
+    DFGM_UART_rxd : in STD_LOGIC;
+    DFGM_UART_txd : out STD_LOGIC;
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
@@ -37,22 +39,26 @@ entity design_1_wrapper is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     GPIO_0_tri_io : inout STD_LOGIC_VECTOR ( 15 downto 0 );
-    IIC_0_scl_io : inout STD_LOGIC;
-    IIC_0_sda_io : inout STD_LOGIC;
-    IIC_1_0_scl_io : inout STD_LOGIC;
-    IIC_1_0_sda_io : inout STD_LOGIC;
-    SPI_0_0_io0_io : inout STD_LOGIC;
-    SPI_0_0_io1_io : inout STD_LOGIC;
-    SPI_0_0_sck_io : inout STD_LOGIC;
-    SPI_0_0_ss_io : inout STD_LOGIC_VECTOR ( 0 to 0 );
-    SPI_0_1_io0_io : inout STD_LOGIC;
-    SPI_0_1_io1_io : inout STD_LOGIC;
-    SPI_0_1_sck_io : inout STD_LOGIC;
-    SPI_0_1_ss_io : inout STD_LOGIC_VECTOR ( 0 to 0 );
-    UART_0_rxd : in STD_LOGIC;
-    UART_0_txd : out STD_LOGIC;
-    UART_1_rxd : in STD_LOGIC;
-    UART_1_txd : out STD_LOGIC
+    IRIS_SPI_miso : in STD_LOGIC;
+    IRIS_SPI_mosi : out STD_LOGIC;
+    IRIS_SPI_sck : in STD_LOGIC;
+    IRIS_SPI_ss : in STD_LOGIC;
+    PANEL_IIC_scl_io : inout STD_LOGIC;
+    PANEL_IIC_sda_io : inout STD_LOGIC;
+    PPP_UART_0_rxd : in STD_LOGIC;
+    PPP_UART_0_txd : out STD_LOGIC;
+    PPP_UART_1_rxd : in STD_LOGIC;
+    PPP_UART_1_txd : out STD_LOGIC;
+    PPP_UART_2_rxd : in STD_LOGIC;
+    PPP_UART_2_txd : out STD_LOGIC;
+    PPP_UART_3_rxd : in STD_LOGIC;
+    PPP_UART_3_txd : out STD_LOGIC;
+    SBAND_IIC_scl_io : inout STD_LOGIC;
+    SBAND_IIC_sda_io : inout STD_LOGIC;
+    SBAND_SPI_io0_io : inout STD_LOGIC;
+    SBAND_SPI_io1_io : inout STD_LOGIC;
+    SBAND_SPI_sck_io : inout STD_LOGIC;
+    SBAND_SPI_ss_io : inout STD_LOGIC_VECTOR ( 0 to 0 )
   );
 end design_1_wrapper;
 
@@ -80,51 +86,49 @@ architecture STRUCTURE of design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    UART_0_txd : out STD_LOGIC;
-    UART_0_rxd : in STD_LOGIC;
-    IIC_0_scl_i : in STD_LOGIC;
-    IIC_0_scl_o : out STD_LOGIC;
-    IIC_0_scl_t : out STD_LOGIC;
-    IIC_0_sda_i : in STD_LOGIC;
-    IIC_0_sda_o : out STD_LOGIC;
-    IIC_0_sda_t : out STD_LOGIC;
+    SBAND_IIC_scl_i : in STD_LOGIC;
+    SBAND_IIC_scl_o : out STD_LOGIC;
+    SBAND_IIC_scl_t : out STD_LOGIC;
+    SBAND_IIC_sda_i : in STD_LOGIC;
+    SBAND_IIC_sda_o : out STD_LOGIC;
+    SBAND_IIC_sda_t : out STD_LOGIC;
     CAN_0_0_tx : out STD_LOGIC;
     CAN_0_0_rx : in STD_LOGIC;
-    IIC_1_0_sda_i : in STD_LOGIC;
-    IIC_1_0_sda_o : out STD_LOGIC;
-    IIC_1_0_sda_t : out STD_LOGIC;
-    IIC_1_0_scl_i : in STD_LOGIC;
-    IIC_1_0_scl_o : out STD_LOGIC;
-    IIC_1_0_scl_t : out STD_LOGIC;
-    SPI_0_1_io0_i : in STD_LOGIC;
-    SPI_0_1_io0_o : out STD_LOGIC;
-    SPI_0_1_io0_t : out STD_LOGIC;
-    SPI_0_1_io1_i : in STD_LOGIC;
-    SPI_0_1_io1_o : out STD_LOGIC;
-    SPI_0_1_io1_t : out STD_LOGIC;
-    SPI_0_1_ss_i : in STD_LOGIC_VECTOR ( 0 to 0 );
-    SPI_0_1_ss_o : out STD_LOGIC_VECTOR ( 0 to 0 );
-    SPI_0_1_ss_t : out STD_LOGIC;
-    SPI_0_1_sck_i : in STD_LOGIC;
-    SPI_0_1_sck_o : out STD_LOGIC;
-    SPI_0_1_sck_t : out STD_LOGIC;
-    UART_1_rxd : in STD_LOGIC;
-    UART_1_txd : out STD_LOGIC;
-    SPI_0_0_sck_i : in STD_LOGIC;
-    SPI_0_0_sck_o : out STD_LOGIC;
-    SPI_0_0_sck_t : out STD_LOGIC;
-    SPI_0_0_io0_i : in STD_LOGIC;
-    SPI_0_0_io0_o : out STD_LOGIC;
-    SPI_0_0_io0_t : out STD_LOGIC;
-    SPI_0_0_io1_i : in STD_LOGIC;
-    SPI_0_0_io1_o : out STD_LOGIC;
-    SPI_0_0_io1_t : out STD_LOGIC;
-    SPI_0_0_ss_i : in STD_LOGIC_VECTOR ( 0 to 0 );
-    SPI_0_0_ss_o : out STD_LOGIC_VECTOR ( 0 to 0 );
-    SPI_0_0_ss_t : out STD_LOGIC;
+    PANEL_IIC_sda_i : in STD_LOGIC;
+    PANEL_IIC_sda_o : out STD_LOGIC;
+    PANEL_IIC_sda_t : out STD_LOGIC;
+    PANEL_IIC_scl_i : in STD_LOGIC;
+    PANEL_IIC_scl_o : out STD_LOGIC;
+    PANEL_IIC_scl_t : out STD_LOGIC;
+    DFGM_UART_rxd : in STD_LOGIC;
+    DFGM_UART_txd : out STD_LOGIC;
+    SBAND_SPI_sck_i : in STD_LOGIC;
+    SBAND_SPI_sck_o : out STD_LOGIC;
+    SBAND_SPI_sck_t : out STD_LOGIC;
+    SBAND_SPI_io0_i : in STD_LOGIC;
+    SBAND_SPI_io0_o : out STD_LOGIC;
+    SBAND_SPI_io0_t : out STD_LOGIC;
+    SBAND_SPI_io1_i : in STD_LOGIC;
+    SBAND_SPI_io1_o : out STD_LOGIC;
+    SBAND_SPI_io1_t : out STD_LOGIC;
+    SBAND_SPI_ss_i : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SBAND_SPI_ss_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    SBAND_SPI_ss_t : out STD_LOGIC;
     GPIO_0_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     GPIO_0_tri_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    GPIO_0_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
+    GPIO_0_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    PPP_UART_0_rxd : in STD_LOGIC;
+    PPP_UART_0_txd : out STD_LOGIC;
+    PPP_UART_1_rxd : in STD_LOGIC;
+    PPP_UART_1_txd : out STD_LOGIC;
+    PPP_UART_2_rxd : in STD_LOGIC;
+    PPP_UART_2_txd : out STD_LOGIC;
+    PPP_UART_3_rxd : in STD_LOGIC;
+    PPP_UART_3_txd : out STD_LOGIC;
+    IRIS_SPI_miso : in STD_LOGIC;
+    IRIS_SPI_mosi : out STD_LOGIC;
+    IRIS_SPI_sck : in STD_LOGIC;
+    IRIS_SPI_ss : in STD_LOGIC
   );
   end component design_1;
   component IOBUF is
@@ -199,44 +203,31 @@ architecture STRUCTURE of design_1_wrapper is
   signal GPIO_0_tri_t_7 : STD_LOGIC_VECTOR ( 7 to 7 );
   signal GPIO_0_tri_t_8 : STD_LOGIC_VECTOR ( 8 to 8 );
   signal GPIO_0_tri_t_9 : STD_LOGIC_VECTOR ( 9 to 9 );
-  signal IIC_0_scl_i : STD_LOGIC;
-  signal IIC_0_scl_o : STD_LOGIC;
-  signal IIC_0_scl_t : STD_LOGIC;
-  signal IIC_0_sda_i : STD_LOGIC;
-  signal IIC_0_sda_o : STD_LOGIC;
-  signal IIC_0_sda_t : STD_LOGIC;
-  signal IIC_1_0_scl_i : STD_LOGIC;
-  signal IIC_1_0_scl_o : STD_LOGIC;
-  signal IIC_1_0_scl_t : STD_LOGIC;
-  signal IIC_1_0_sda_i : STD_LOGIC;
-  signal IIC_1_0_sda_o : STD_LOGIC;
-  signal IIC_1_0_sda_t : STD_LOGIC;
-  signal SPI_0_0_io0_i : STD_LOGIC;
-  signal SPI_0_0_io0_o : STD_LOGIC;
-  signal SPI_0_0_io0_t : STD_LOGIC;
-  signal SPI_0_0_io1_i : STD_LOGIC;
-  signal SPI_0_0_io1_o : STD_LOGIC;
-  signal SPI_0_0_io1_t : STD_LOGIC;
-  signal SPI_0_0_sck_i : STD_LOGIC;
-  signal SPI_0_0_sck_o : STD_LOGIC;
-  signal SPI_0_0_sck_t : STD_LOGIC;
-  signal SPI_0_0_ss_i_0 : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal SPI_0_0_ss_io_0 : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal SPI_0_0_ss_o_0 : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal SPI_0_0_ss_t : STD_LOGIC;
-  signal SPI_0_1_io0_i : STD_LOGIC;
-  signal SPI_0_1_io0_o : STD_LOGIC;
-  signal SPI_0_1_io0_t : STD_LOGIC;
-  signal SPI_0_1_io1_i : STD_LOGIC;
-  signal SPI_0_1_io1_o : STD_LOGIC;
-  signal SPI_0_1_io1_t : STD_LOGIC;
-  signal SPI_0_1_sck_i : STD_LOGIC;
-  signal SPI_0_1_sck_o : STD_LOGIC;
-  signal SPI_0_1_sck_t : STD_LOGIC;
-  signal SPI_0_1_ss_i_0 : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal SPI_0_1_ss_io_0 : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal SPI_0_1_ss_o_0 : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal SPI_0_1_ss_t : STD_LOGIC;
+  signal PANEL_IIC_scl_i : STD_LOGIC;
+  signal PANEL_IIC_scl_o : STD_LOGIC;
+  signal PANEL_IIC_scl_t : STD_LOGIC;
+  signal PANEL_IIC_sda_i : STD_LOGIC;
+  signal PANEL_IIC_sda_o : STD_LOGIC;
+  signal PANEL_IIC_sda_t : STD_LOGIC;
+  signal SBAND_IIC_scl_i : STD_LOGIC;
+  signal SBAND_IIC_scl_o : STD_LOGIC;
+  signal SBAND_IIC_scl_t : STD_LOGIC;
+  signal SBAND_IIC_sda_i : STD_LOGIC;
+  signal SBAND_IIC_sda_o : STD_LOGIC;
+  signal SBAND_IIC_sda_t : STD_LOGIC;
+  signal SBAND_SPI_io0_i : STD_LOGIC;
+  signal SBAND_SPI_io0_o : STD_LOGIC;
+  signal SBAND_SPI_io0_t : STD_LOGIC;
+  signal SBAND_SPI_io1_i : STD_LOGIC;
+  signal SBAND_SPI_io1_o : STD_LOGIC;
+  signal SBAND_SPI_io1_t : STD_LOGIC;
+  signal SBAND_SPI_sck_i : STD_LOGIC;
+  signal SBAND_SPI_sck_o : STD_LOGIC;
+  signal SBAND_SPI_sck_t : STD_LOGIC;
+  signal SBAND_SPI_ss_i_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal SBAND_SPI_ss_io_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal SBAND_SPI_ss_o_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal SBAND_SPI_ss_t : STD_LOGIC;
 begin
 GPIO_0_tri_iobuf_0: component IOBUF
      port map (
@@ -350,89 +341,61 @@ GPIO_0_tri_iobuf_9: component IOBUF
       O => GPIO_0_tri_i_9(9),
       T => GPIO_0_tri_t_9(9)
     );
-IIC_0_scl_iobuf: component IOBUF
+PANEL_IIC_scl_iobuf: component IOBUF
      port map (
-      I => IIC_0_scl_o,
-      IO => IIC_0_scl_io,
-      O => IIC_0_scl_i,
-      T => IIC_0_scl_t
+      I => PANEL_IIC_scl_o,
+      IO => PANEL_IIC_scl_io,
+      O => PANEL_IIC_scl_i,
+      T => PANEL_IIC_scl_t
     );
-IIC_0_sda_iobuf: component IOBUF
+PANEL_IIC_sda_iobuf: component IOBUF
      port map (
-      I => IIC_0_sda_o,
-      IO => IIC_0_sda_io,
-      O => IIC_0_sda_i,
-      T => IIC_0_sda_t
+      I => PANEL_IIC_sda_o,
+      IO => PANEL_IIC_sda_io,
+      O => PANEL_IIC_sda_i,
+      T => PANEL_IIC_sda_t
     );
-IIC_1_0_scl_iobuf: component IOBUF
+SBAND_IIC_scl_iobuf: component IOBUF
      port map (
-      I => IIC_1_0_scl_o,
-      IO => IIC_1_0_scl_io,
-      O => IIC_1_0_scl_i,
-      T => IIC_1_0_scl_t
+      I => SBAND_IIC_scl_o,
+      IO => SBAND_IIC_scl_io,
+      O => SBAND_IIC_scl_i,
+      T => SBAND_IIC_scl_t
     );
-IIC_1_0_sda_iobuf: component IOBUF
+SBAND_IIC_sda_iobuf: component IOBUF
      port map (
-      I => IIC_1_0_sda_o,
-      IO => IIC_1_0_sda_io,
-      O => IIC_1_0_sda_i,
-      T => IIC_1_0_sda_t
+      I => SBAND_IIC_sda_o,
+      IO => SBAND_IIC_sda_io,
+      O => SBAND_IIC_sda_i,
+      T => SBAND_IIC_sda_t
     );
-SPI_0_0_io0_iobuf: component IOBUF
+SBAND_SPI_io0_iobuf: component IOBUF
      port map (
-      I => SPI_0_0_io0_o,
-      IO => SPI_0_0_io0_io,
-      O => SPI_0_0_io0_i,
-      T => SPI_0_0_io0_t
+      I => SBAND_SPI_io0_o,
+      IO => SBAND_SPI_io0_io,
+      O => SBAND_SPI_io0_i,
+      T => SBAND_SPI_io0_t
     );
-SPI_0_0_io1_iobuf: component IOBUF
+SBAND_SPI_io1_iobuf: component IOBUF
      port map (
-      I => SPI_0_0_io1_o,
-      IO => SPI_0_0_io1_io,
-      O => SPI_0_0_io1_i,
-      T => SPI_0_0_io1_t
+      I => SBAND_SPI_io1_o,
+      IO => SBAND_SPI_io1_io,
+      O => SBAND_SPI_io1_i,
+      T => SBAND_SPI_io1_t
     );
-SPI_0_0_sck_iobuf: component IOBUF
+SBAND_SPI_sck_iobuf: component IOBUF
      port map (
-      I => SPI_0_0_sck_o,
-      IO => SPI_0_0_sck_io,
-      O => SPI_0_0_sck_i,
-      T => SPI_0_0_sck_t
+      I => SBAND_SPI_sck_o,
+      IO => SBAND_SPI_sck_io,
+      O => SBAND_SPI_sck_i,
+      T => SBAND_SPI_sck_t
     );
-SPI_0_0_ss_iobuf_0: component IOBUF
+SBAND_SPI_ss_iobuf_0: component IOBUF
      port map (
-      I => SPI_0_0_ss_o_0(0),
-      IO => SPI_0_0_ss_io(0),
-      O => SPI_0_0_ss_i_0(0),
-      T => SPI_0_0_ss_t
-    );
-SPI_0_1_io0_iobuf: component IOBUF
-     port map (
-      I => SPI_0_1_io0_o,
-      IO => SPI_0_1_io0_io,
-      O => SPI_0_1_io0_i,
-      T => SPI_0_1_io0_t
-    );
-SPI_0_1_io1_iobuf: component IOBUF
-     port map (
-      I => SPI_0_1_io1_o,
-      IO => SPI_0_1_io1_io,
-      O => SPI_0_1_io1_i,
-      T => SPI_0_1_io1_t
-    );
-SPI_0_1_sck_iobuf: component IOBUF
-     port map (
-      I => SPI_0_1_sck_o,
-      IO => SPI_0_1_sck_io,
-      O => SPI_0_1_sck_i,
-      T => SPI_0_1_sck_t
-    );
-SPI_0_1_ss_iobuf_0: component IOBUF
-     port map (
-      I => SPI_0_1_ss_o_0(0),
-      IO => SPI_0_1_ss_io(0),
-      O => SPI_0_1_ss_i_0(0),
-      T => SPI_0_1_ss_t
+      I => SBAND_SPI_ss_o_0(0),
+      IO => SBAND_SPI_ss_io(0),
+      O => SBAND_SPI_ss_i_0(0),
+      T => SBAND_SPI_ss_t
     );
 design_1_i: component design_1
      port map (
@@ -453,6 +416,8 @@ design_1_i: component design_1
       DDR_ras_n => DDR_ras_n,
       DDR_reset_n => DDR_reset_n,
       DDR_we_n => DDR_we_n,
+      DFGM_UART_rxd => DFGM_UART_rxd,
+      DFGM_UART_txd => DFGM_UART_txd,
       FIXED_IO_ddr_vrn => FIXED_IO_ddr_vrn,
       FIXED_IO_ddr_vrp => FIXED_IO_ddr_vrp,
       FIXED_IO_mio(53 downto 0) => FIXED_IO_mio(53 downto 0),
@@ -507,45 +472,41 @@ design_1_i: component design_1
       GPIO_0_tri_t(2) => GPIO_0_tri_t_2(2),
       GPIO_0_tri_t(1) => GPIO_0_tri_t_1(1),
       GPIO_0_tri_t(0) => GPIO_0_tri_t_0(0),
-      IIC_0_scl_i => IIC_0_scl_i,
-      IIC_0_scl_o => IIC_0_scl_o,
-      IIC_0_scl_t => IIC_0_scl_t,
-      IIC_0_sda_i => IIC_0_sda_i,
-      IIC_0_sda_o => IIC_0_sda_o,
-      IIC_0_sda_t => IIC_0_sda_t,
-      IIC_1_0_scl_i => IIC_1_0_scl_i,
-      IIC_1_0_scl_o => IIC_1_0_scl_o,
-      IIC_1_0_scl_t => IIC_1_0_scl_t,
-      IIC_1_0_sda_i => IIC_1_0_sda_i,
-      IIC_1_0_sda_o => IIC_1_0_sda_o,
-      IIC_1_0_sda_t => IIC_1_0_sda_t,
-      SPI_0_0_io0_i => SPI_0_0_io0_i,
-      SPI_0_0_io0_o => SPI_0_0_io0_o,
-      SPI_0_0_io0_t => SPI_0_0_io0_t,
-      SPI_0_0_io1_i => SPI_0_0_io1_i,
-      SPI_0_0_io1_o => SPI_0_0_io1_o,
-      SPI_0_0_io1_t => SPI_0_0_io1_t,
-      SPI_0_0_sck_i => SPI_0_0_sck_i,
-      SPI_0_0_sck_o => SPI_0_0_sck_o,
-      SPI_0_0_sck_t => SPI_0_0_sck_t,
-      SPI_0_0_ss_i(0) => SPI_0_0_ss_i_0(0),
-      SPI_0_0_ss_o(0) => SPI_0_0_ss_o_0(0),
-      SPI_0_0_ss_t => SPI_0_0_ss_t,
-      SPI_0_1_io0_i => SPI_0_1_io0_i,
-      SPI_0_1_io0_o => SPI_0_1_io0_o,
-      SPI_0_1_io0_t => SPI_0_1_io0_t,
-      SPI_0_1_io1_i => SPI_0_1_io1_i,
-      SPI_0_1_io1_o => SPI_0_1_io1_o,
-      SPI_0_1_io1_t => SPI_0_1_io1_t,
-      SPI_0_1_sck_i => SPI_0_1_sck_i,
-      SPI_0_1_sck_o => SPI_0_1_sck_o,
-      SPI_0_1_sck_t => SPI_0_1_sck_t,
-      SPI_0_1_ss_i(0) => SPI_0_1_ss_i_0(0),
-      SPI_0_1_ss_o(0) => SPI_0_1_ss_o_0(0),
-      SPI_0_1_ss_t => SPI_0_1_ss_t,
-      UART_0_rxd => UART_0_rxd,
-      UART_0_txd => UART_0_txd,
-      UART_1_rxd => UART_1_rxd,
-      UART_1_txd => UART_1_txd
+      IRIS_SPI_miso => IRIS_SPI_miso,
+      IRIS_SPI_mosi => IRIS_SPI_mosi,
+      IRIS_SPI_sck => IRIS_SPI_sck,
+      IRIS_SPI_ss => IRIS_SPI_ss,
+      PANEL_IIC_scl_i => PANEL_IIC_scl_i,
+      PANEL_IIC_scl_o => PANEL_IIC_scl_o,
+      PANEL_IIC_scl_t => PANEL_IIC_scl_t,
+      PANEL_IIC_sda_i => PANEL_IIC_sda_i,
+      PANEL_IIC_sda_o => PANEL_IIC_sda_o,
+      PANEL_IIC_sda_t => PANEL_IIC_sda_t,
+      PPP_UART_0_rxd => PPP_UART_0_rxd,
+      PPP_UART_0_txd => PPP_UART_0_txd,
+      PPP_UART_1_rxd => PPP_UART_1_rxd,
+      PPP_UART_1_txd => PPP_UART_1_txd,
+      PPP_UART_2_rxd => PPP_UART_2_rxd,
+      PPP_UART_2_txd => PPP_UART_2_txd,
+      PPP_UART_3_rxd => PPP_UART_3_rxd,
+      PPP_UART_3_txd => PPP_UART_3_txd,
+      SBAND_IIC_scl_i => SBAND_IIC_scl_i,
+      SBAND_IIC_scl_o => SBAND_IIC_scl_o,
+      SBAND_IIC_scl_t => SBAND_IIC_scl_t,
+      SBAND_IIC_sda_i => SBAND_IIC_sda_i,
+      SBAND_IIC_sda_o => SBAND_IIC_sda_o,
+      SBAND_IIC_sda_t => SBAND_IIC_sda_t,
+      SBAND_SPI_io0_i => SBAND_SPI_io0_i,
+      SBAND_SPI_io0_o => SBAND_SPI_io0_o,
+      SBAND_SPI_io0_t => SBAND_SPI_io0_t,
+      SBAND_SPI_io1_i => SBAND_SPI_io1_i,
+      SBAND_SPI_io1_o => SBAND_SPI_io1_o,
+      SBAND_SPI_io1_t => SBAND_SPI_io1_t,
+      SBAND_SPI_sck_i => SBAND_SPI_sck_i,
+      SBAND_SPI_sck_o => SBAND_SPI_sck_o,
+      SBAND_SPI_sck_t => SBAND_SPI_sck_t,
+      SBAND_SPI_ss_i(0) => SBAND_SPI_ss_i_0(0),
+      SBAND_SPI_ss_o(0) => SBAND_SPI_ss_o_0(0),
+      SBAND_SPI_ss_t => SBAND_SPI_ss_t
     );
 end STRUCTURE;

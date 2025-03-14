@@ -2,6 +2,16 @@
 
 This repository contains Vivado and Petaliux projects to setup a Zybo Z7-20 to reflect the interfaces on the Xiphos Q7 OBC so a test hardware environment is available.
 
+When cloning, you need to ensure submodules are also cloned using:
+
+```bash
+# Creating new clone
+git clone --recurse-submodules https://github.com/albertasat/ex3_zybo_obc_config
+# Already cloned repository
+git submodule init
+git submodule update
+```
+
 ## Requirements
 
 - Xilinx Vivado 2022.2
@@ -84,3 +94,11 @@ TBD
 When runnning design synthesis on a new machine it will, for some reason, get confused on where to find some files. Using the paths from the previously machine which causes the synthesis job to fail. 
 
 To fix this, go to `Tools > Settings > IP` and either clear the cache or disable it.
+
+### Cleaning
+
+When switching between branches, make sure to clean any ignored files after switch to avoid any issues:
+
+```bash
+git
+```

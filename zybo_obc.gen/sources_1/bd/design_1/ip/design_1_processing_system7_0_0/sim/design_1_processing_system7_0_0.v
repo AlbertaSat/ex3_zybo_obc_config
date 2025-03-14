@@ -64,8 +64,6 @@ I2C1_SDA_T,
 I2C1_SCL_I, 
 I2C1_SCL_O, 
 I2C1_SCL_T, 
-UART0_TX, 
-UART0_RX, 
 USB0_PORT_INDCTL, 
 USB0_VBUS_PWRSELECT, 
 USB0_VBUS_PWRFAULT, 
@@ -141,8 +139,6 @@ output I2C1_SDA_T;
 input I2C1_SCL_I;
 output I2C1_SCL_O;
 output I2C1_SCL_T;
-output UART0_TX;
-input UART0_RX;
 output [1 : 0] USB0_PORT_INDCTL;
 output USB0_VBUS_PWRSELECT;
 input USB0_VBUS_PWRFAULT;
@@ -185,7 +181,7 @@ input [11 : 0] M_AXI_GP0_RID;
 input [1 : 0] M_AXI_GP0_BRESP;
 input [1 : 0] M_AXI_GP0_RRESP;
 input [31 : 0] M_AXI_GP0_RDATA;
-input [3 : 0] IRQ_F2P;
+input [7 : 0] IRQ_F2P;
 output FCLK_CLK0;
 output FCLK_RESET0_N;
 input [53 : 0] MIO;
