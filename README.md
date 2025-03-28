@@ -18,6 +18,8 @@ git submodule update
 
 ## Interfaces
 
+> **WARNING**: This interface list is out of date for the iris-comms-testing branch. For correct interface pins, please refer to the [constraints file](zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc) and cross reference the PACKAGE_PIN to table 16.1 in the [Zybo Pmod reference](https://digilent.com/reference/programmable-logic/zybo-z7/reference-manual?redirect=1#pmod_ports).
+
 This project exposes the following interfaces to reflect those outlined in `EX3-ES OBC Hardware Configuration and Setup Document` `Interfaces` section found on the AlbertaSat google drive:
 
 ### I2C (3)
