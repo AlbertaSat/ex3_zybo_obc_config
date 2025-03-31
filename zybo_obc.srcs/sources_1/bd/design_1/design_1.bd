@@ -2815,7 +2815,7 @@
         "inst_hier_path": "xlconcat_0",
         "parameters": {
           "NUM_PORTS": {
-            "value": "8"
+            "value": "9"
           }
         }
       },
@@ -2827,6 +2827,9 @@
         "parameters": {
           "C_GPIO_WIDTH": {
             "value": "16"
+          },
+          "C_INTERRUPT_PRESENT": {
+            "value": "1"
           }
         }
       },
@@ -3010,6 +3013,12 @@
       }
     },
     "nets": {
+      "axi_gpio_0_ip2intc_irpt": {
+        "ports": [
+          "axi_gpio_0/ip2intc_irpt",
+          "xlconcat_0/In8"
+        ]
+      },
       "axi_iic_0_iic2intc_irpt": {
         "ports": [
           "sband_iic/iic2intc_irpt",

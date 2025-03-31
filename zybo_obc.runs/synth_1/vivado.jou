@@ -2,12 +2,12 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Mar 12 16:31:11 2025
-# Process ID: 2016995
+# Start of session at: Mon Mar 31 10:31:43 2025
+# Process ID: 206999
 # Current directory: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/design_1_wrapper.vds
 # Journal file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/vivado.jou
-# Running On: mothership, OS: Linux, CPU Frequency: 4710.644 MHz, CPU Physical cores: 24, Host memory: 33568 MB
+# Running On: mothership, OS: Linux, CPU Frequency: 4538.672 MHz, CPU Physical cores: 24, Host memory: 33568 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

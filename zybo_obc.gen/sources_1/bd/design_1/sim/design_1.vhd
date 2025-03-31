@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
---Date        : Wed Mar 12 16:29:38 2025
+--Date        : Mon Mar 31 10:30:49 2025
 --Host        : mothership running 64-bit Nobara Linux 41 (GNOME Edition)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2803,7 +2803,7 @@ architecture STRUCTURE of design_1 is
     M_AXI_GP0_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 8 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
@@ -2985,7 +2985,8 @@ architecture STRUCTURE of design_1 is
     In5 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In6 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In7 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    In8 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    dout : out STD_LOGIC_VECTOR ( 8 downto 0 )
   );
   end component design_1_xlconcat_0_0;
   component design_1_axi_gpio_0_0 is
@@ -3009,6 +3010,7 @@ architecture STRUCTURE of design_1 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
+    ip2intc_irpt : out STD_LOGIC;
     gpio_io_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     gpio_io_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
     gpio_io_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
@@ -3121,6 +3123,7 @@ architecture STRUCTURE of design_1 is
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_gpio_0_GPIO_TRI_T : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal axi_gpio_0_ip2intc_irpt : STD_LOGIC;
   signal axi_iic_0_IIC_SCL_I : STD_LOGIC;
   signal axi_iic_0_IIC_SCL_O : STD_LOGIC;
   signal axi_iic_0_IIC_SCL_T : STD_LOGIC;
@@ -3384,7 +3387,7 @@ architecture STRUCTURE of design_1 is
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal sck_i_0_1 : STD_LOGIC;
   signal spisel_0_1 : STD_LOGIC;
-  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 8 downto 0 );
   signal NLW_iris_spi_io0_o_UNCONNECTED : STD_LOGIC;
   signal NLW_iris_spi_io0_t_UNCONNECTED : STD_LOGIC;
   signal NLW_iris_spi_io1_t_UNCONNECTED : STD_LOGIC;
@@ -3512,6 +3515,7 @@ axi_gpio_0: component design_1_axi_gpio_0_0
       gpio_io_i(15 downto 0) => axi_gpio_0_GPIO_TRI_I(15 downto 0),
       gpio_io_o(15 downto 0) => axi_gpio_0_GPIO_TRI_O(15 downto 0),
       gpio_io_t(15 downto 0) => axi_gpio_0_GPIO_TRI_T(15 downto 0),
+      ip2intc_irpt => axi_gpio_0_ip2intc_irpt,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M04_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_ps7_0_50M_peripheral_aresetn(0),
@@ -3723,7 +3727,7 @@ processing_system7_0: component design_1_processing_system7_0_0
       I2C1_SDA_I => processing_system7_0_IIC_1_SDA_I,
       I2C1_SDA_O => processing_system7_0_IIC_1_SDA_O,
       I2C1_SDA_T => processing_system7_0_IIC_1_SDA_T,
-      IRQ_F2P(7 downto 0) => xlconcat_0_dout(7 downto 0),
+      IRQ_F2P(8 downto 0) => xlconcat_0_dout(8 downto 0),
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
@@ -4076,6 +4080,7 @@ xlconcat_0: component design_1_xlconcat_0_0
       In5(0) => axi_uartlite_3_interrupt,
       In6(0) => axi_uartlite_2_interrupt,
       In7(0) => axi_uartlite_1_interrupt,
-      dout(7 downto 0) => xlconcat_0_dout(7 downto 0)
+      In8(0) => axi_gpio_0_ip2intc_irpt,
+      dout(8 downto 0) => xlconcat_0_dout(8 downto 0)
     );
 end STRUCTURE;

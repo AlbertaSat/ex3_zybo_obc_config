@@ -16,6 +16,10 @@ git submodule update
 
 - Xilinx Vivado 2022.2
 
+## Exports
+
+Semantic versioning of all exports is required. The resulting export name should be zybo_obc_vMAJOR.MINOR.PATCH[-branch] and be placed in the exports directory. Ensure that they are added to the repository.
+
 ## Interfaces
 
 > **WARNING**: This interface list is out of date for the iris-comms-testing branch. For correct interface pins, please refer to the [constraints file](zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc) and cross reference the PACKAGE_PIN to table 16.1 in the [Zybo Pmod reference](https://digilent.com/reference/programmable-logic/zybo-z7/reference-manual?redirect=1#pmod_ports).
