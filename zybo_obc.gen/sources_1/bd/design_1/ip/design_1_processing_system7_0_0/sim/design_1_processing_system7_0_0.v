@@ -56,16 +56,29 @@
 `timescale 1ns/1ps
 
 module design_1_processing_system7_0_0 (
-CAN0_PHY_TX, 
-CAN0_PHY_RX, 
+GPIO_I, 
+GPIO_O, 
+GPIO_T, 
 I2C1_SDA_I, 
 I2C1_SDA_O, 
 I2C1_SDA_T, 
 I2C1_SCL_I, 
 I2C1_SCL_O, 
 I2C1_SCL_T, 
-UART0_TX, 
-UART0_RX, 
+SPI0_SCLK_I, 
+SPI0_SCLK_O, 
+SPI0_SCLK_T, 
+SPI0_MOSI_I, 
+SPI0_MOSI_O, 
+SPI0_MOSI_T, 
+SPI0_MISO_I, 
+SPI0_MISO_O, 
+SPI0_MISO_T, 
+SPI0_SS_I, 
+SPI0_SS_O, 
+SPI0_SS1_O, 
+SPI0_SS2_O, 
+SPI0_SS_T, 
 USB0_PORT_INDCTL, 
 USB0_VBUS_PWRSELECT, 
 USB0_VBUS_PWRFAULT, 
@@ -133,16 +146,29 @@ PS_SRSTB,
 PS_CLK, 
 PS_PORB 
 );
-output CAN0_PHY_TX;
-input CAN0_PHY_RX;
+input [63 : 0] GPIO_I;
+output [63 : 0] GPIO_O;
+output [63 : 0] GPIO_T;
 input I2C1_SDA_I;
 output I2C1_SDA_O;
 output I2C1_SDA_T;
 input I2C1_SCL_I;
 output I2C1_SCL_O;
 output I2C1_SCL_T;
-output UART0_TX;
-input UART0_RX;
+input SPI0_SCLK_I;
+output SPI0_SCLK_O;
+output SPI0_SCLK_T;
+input SPI0_MOSI_I;
+output SPI0_MOSI_O;
+output SPI0_MOSI_T;
+input SPI0_MISO_I;
+output SPI0_MISO_O;
+output SPI0_MISO_T;
+input SPI0_SS_I;
+output SPI0_SS_O;
+output SPI0_SS1_O;
+output SPI0_SS2_O;
+output SPI0_SS_T;
 output [1 : 0] USB0_PORT_INDCTL;
 output USB0_VBUS_PWRSELECT;
 input USB0_VBUS_PWRFAULT;
@@ -185,7 +211,7 @@ input [11 : 0] M_AXI_GP0_RID;
 input [1 : 0] M_AXI_GP0_BRESP;
 input [1 : 0] M_AXI_GP0_RRESP;
 input [31 : 0] M_AXI_GP0_RDATA;
-input [3 : 0] IRQ_F2P;
+input [4 : 0] IRQ_F2P;
 output FCLK_CLK0;
 output FCLK_RESET0_N;
 input [53 : 0] MIO;

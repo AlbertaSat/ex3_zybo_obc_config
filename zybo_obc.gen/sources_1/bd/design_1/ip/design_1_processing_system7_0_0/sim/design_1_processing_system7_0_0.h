@@ -1,7 +1,7 @@
 #ifndef IP_DESIGN_1_PROCESSING_SYSTEM7_0_0_H_
 #define IP_DESIGN_1_PROCESSING_SYSTEM7_0_0_H_
 
-// (c) Copyright 1995-2024 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -80,16 +80,29 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > CAN0_PHY_TX;
-  sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< sc_dt::sc_bv<64> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_T;
   sc_core::sc_in< bool > I2C1_SDA_I;
   sc_core::sc_out< bool > I2C1_SDA_O;
   sc_core::sc_out< bool > I2C1_SDA_T;
   sc_core::sc_in< bool > I2C1_SCL_I;
   sc_core::sc_out< bool > I2C1_SCL_O;
   sc_core::sc_out< bool > I2C1_SCL_T;
-  sc_core::sc_out< bool > UART0_TX;
-  sc_core::sc_in< bool > UART0_RX;
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;
   sc_core::sc_out< bool > USB0_VBUS_PWRSELECT;
   sc_core::sc_in< bool > USB0_VBUS_PWRFAULT;
@@ -132,7 +145,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<4> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<5> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -193,16 +206,29 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > CAN0_PHY_TX;
-  sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< sc_dt::sc_bv<64> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_T;
   sc_core::sc_in< bool > I2C1_SDA_I;
   sc_core::sc_out< bool > I2C1_SDA_O;
   sc_core::sc_out< bool > I2C1_SDA_T;
   sc_core::sc_in< bool > I2C1_SCL_I;
   sc_core::sc_out< bool > I2C1_SCL_O;
   sc_core::sc_out< bool > I2C1_SCL_T;
-  sc_core::sc_out< bool > UART0_TX;
-  sc_core::sc_in< bool > UART0_RX;
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;
   sc_core::sc_out< bool > USB0_VBUS_PWRSELECT;
   sc_core::sc_in< bool > USB0_VBUS_PWRFAULT;
@@ -245,7 +271,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<4> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<5> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_inout< sc_dt::sc_bv<54> > MIO;
@@ -306,16 +332,29 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > CAN0_PHY_TX;
-  sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< sc_dt::sc_bv<64> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_T;
   sc_core::sc_in< bool > I2C1_SDA_I;
   sc_core::sc_out< bool > I2C1_SDA_O;
   sc_core::sc_out< bool > I2C1_SDA_T;
   sc_core::sc_in< bool > I2C1_SCL_I;
   sc_core::sc_out< bool > I2C1_SCL_O;
   sc_core::sc_out< bool > I2C1_SCL_T;
-  sc_core::sc_out< bool > UART0_TX;
-  sc_core::sc_in< bool > UART0_RX;
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;
   sc_core::sc_out< bool > USB0_VBUS_PWRSELECT;
   sc_core::sc_in< bool > USB0_VBUS_PWRFAULT;
@@ -358,7 +397,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<4> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<5> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -421,16 +460,29 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > CAN0_PHY_TX;
-  sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< sc_dt::sc_bv<64> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_T;
   sc_core::sc_in< bool > I2C1_SDA_I;
   sc_core::sc_out< bool > I2C1_SDA_O;
   sc_core::sc_out< bool > I2C1_SDA_T;
   sc_core::sc_in< bool > I2C1_SCL_I;
   sc_core::sc_out< bool > I2C1_SCL_O;
   sc_core::sc_out< bool > I2C1_SCL_T;
-  sc_core::sc_out< bool > UART0_TX;
-  sc_core::sc_in< bool > UART0_RX;
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;
   sc_core::sc_out< bool > USB0_VBUS_PWRSELECT;
   sc_core::sc_in< bool > USB0_VBUS_PWRFAULT;
@@ -473,7 +525,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<4> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<5> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -542,16 +594,29 @@ public:
 
   // module pin-to-pin RTL interface
 
-  sc_core::sc_out< bool > CAN0_PHY_TX;
-  sc_core::sc_in< bool > CAN0_PHY_RX;
+  sc_core::sc_in< sc_dt::sc_bv<64> > GPIO_I;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_O;
+  sc_core::sc_out< sc_dt::sc_bv<64> > GPIO_T;
   sc_core::sc_in< bool > I2C1_SDA_I;
   sc_core::sc_out< bool > I2C1_SDA_O;
   sc_core::sc_out< bool > I2C1_SDA_T;
   sc_core::sc_in< bool > I2C1_SCL_I;
   sc_core::sc_out< bool > I2C1_SCL_O;
   sc_core::sc_out< bool > I2C1_SCL_T;
-  sc_core::sc_out< bool > UART0_TX;
-  sc_core::sc_in< bool > UART0_RX;
+  sc_core::sc_in< bool > SPI0_SCLK_I;
+  sc_core::sc_out< bool > SPI0_SCLK_O;
+  sc_core::sc_out< bool > SPI0_SCLK_T;
+  sc_core::sc_in< bool > SPI0_MOSI_I;
+  sc_core::sc_out< bool > SPI0_MOSI_O;
+  sc_core::sc_out< bool > SPI0_MOSI_T;
+  sc_core::sc_in< bool > SPI0_MISO_I;
+  sc_core::sc_out< bool > SPI0_MISO_O;
+  sc_core::sc_out< bool > SPI0_MISO_T;
+  sc_core::sc_in< bool > SPI0_SS_I;
+  sc_core::sc_out< bool > SPI0_SS_O;
+  sc_core::sc_out< bool > SPI0_SS1_O;
+  sc_core::sc_out< bool > SPI0_SS2_O;
+  sc_core::sc_out< bool > SPI0_SS_T;
   sc_core::sc_out< sc_dt::sc_bv<2> > USB0_PORT_INDCTL;
   sc_core::sc_out< bool > USB0_VBUS_PWRSELECT;
   sc_core::sc_in< bool > USB0_VBUS_PWRFAULT;
@@ -594,7 +659,7 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<4> > IRQ_F2P;
+  sc_core::sc_in< sc_dt::sc_bv<5> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;

@@ -134,21 +134,34 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     
     public:
     // Non-AXI ports are declared here
-    sc_core::sc_out<bool> CAN0_PHY_TX;
-    sc_core::sc_in<bool> CAN0_PHY_RX;
+    sc_core::sc_in<sc_dt::sc_bv<64> >  GPIO_I;
+    sc_core::sc_out<sc_dt::sc_bv<64> >  GPIO_O;
+    sc_core::sc_out<sc_dt::sc_bv<64> >  GPIO_T;
     sc_core::sc_in<bool> I2C1_SDA_I;
     sc_core::sc_out<bool> I2C1_SDA_O;
     sc_core::sc_out<bool> I2C1_SDA_T;
     sc_core::sc_in<bool> I2C1_SCL_I;
     sc_core::sc_out<bool> I2C1_SCL_O;
     sc_core::sc_out<bool> I2C1_SCL_T;
-    sc_core::sc_out<bool> UART0_TX;
-    sc_core::sc_in<bool> UART0_RX;
+    sc_core::sc_in<bool> SPI0_SCLK_I;
+    sc_core::sc_out<bool> SPI0_SCLK_O;
+    sc_core::sc_out<bool> SPI0_SCLK_T;
+    sc_core::sc_in<bool> SPI0_MOSI_I;
+    sc_core::sc_out<bool> SPI0_MOSI_O;
+    sc_core::sc_out<bool> SPI0_MOSI_T;
+    sc_core::sc_in<bool> SPI0_MISO_I;
+    sc_core::sc_out<bool> SPI0_MISO_O;
+    sc_core::sc_out<bool> SPI0_MISO_T;
+    sc_core::sc_in<bool> SPI0_SS_I;
+    sc_core::sc_out<bool> SPI0_SS_O;
+    sc_core::sc_out<bool> SPI0_SS1_O;
+    sc_core::sc_out<bool> SPI0_SS2_O;
+    sc_core::sc_out<bool> SPI0_SS_T;
     sc_core::sc_out<sc_dt::sc_bv<2> >  USB0_PORT_INDCTL;
     sc_core::sc_out<bool> USB0_VBUS_PWRSELECT;
     sc_core::sc_in<bool> USB0_VBUS_PWRFAULT;
     sc_core::sc_in<bool> M_AXI_GP0_ACLK;
-    sc_core::sc_in<sc_dt::sc_bv<4> >  IRQ_F2P;
+    sc_core::sc_in<sc_dt::sc_bv<5> >  IRQ_F2P;
     sc_core::sc_out<bool> FCLK_CLK0;
     sc_core::sc_out<bool> FCLK_RESET0_N;
     sc_core::sc_inout<sc_dt::sc_bv<54> >  MIO;
