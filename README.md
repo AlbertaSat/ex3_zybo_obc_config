@@ -10,60 +10,50 @@ This repository contains Vivado and Petaliux projects to setup a Zybo Z7-20 to r
 
 This project exposes the following interfaces to reflect those outlined in `EX3-ES OBC Hardware Configuration and Setup Document` `Interfaces` section found on the AlbertaSat google drive:
 
-### I2C (3)
-- MIO I2C0 [14:15] (Daedalus)
-	- Pmod JF pins
-		- SDA: 10
-		- SCL: 9
-- EMIO I2C1 (Hyperion)
+### I2C (2)
+- EMIO I2C1 (Daedalus)
 	- Pmod JB pins
-		- SDA: 2
-		- SCL: 1
+		- SDA: 1
+		- SCL: 2
 - AXI I2C0 (S-Band)
 	- Pmod JD pins
 		- SDA: 2
 		- SCL: 1
 
-### SPI (3)
+### SPI (1)
 
-- MIO SPI1 [10:13] (GPS)
-	- Pmod JF pins
-		- MOSI: 2
-		- MISO: 3
-		- SCLK: 4
-		- SS: 1
-
-Note: AXI SPI has been used instead of putting PS SPI0 through EMIO as it turned out to be too much of a hassle to get it working (multiple slave select lines and such with specific connection requirments for one slave master-mode).
-
-- AXI SPI0 [:] (S-Band)
+- EMIO SPI1 (S-Band)
 	- Pmod JD pins
-		- MOSI: 3
-		- MISO: 4
-		- SCLK: 7
-		- SS: 8
+		- IO0: 3
+		- IO1: 4
+		- SCK: 7
+		- SS1: 8
+  		- SS2: 9
+    	- SS:  10
 
-- AXI SPI1 (IRIS)
-	- Pmod JC pins
-		- MOSI: 3
-		- MISO: 4
-		- SCLK: 7
-		- SS: 8
-
-### UART (2)
-- EMIO UART0 (DFGM)
-	- Pmod JB pins
-		- TX: 8
-		- RX: 9
-- AXI UART0 (UHF)
+### UART (4)
+- EMIO UART0 (GPS)
 	- Pmod JB pins
 		- TX: 4
 		- RX: 7
+- AXI UART2 (DFGM)
+	- Pmod JB pins
+		- TX: 8
+		- RX: 9
+- MIO UART0 [10:11] (UHF)
+	- Pmod JF Pins
+ 		- TX: 3
+   		- RX: 2 
+- MIO UART1 [12:13] (Heracles)
+	- Pmod JF Pins
+ 		- TX: 4
+   		- RX: 1
 
 ### CAN (1)
-- EMIO CAN0 [:] (ADCS & EPS)
-	- Pmod JC pins 1:2
-		- TX: 2
-		- RX: 1
+- MIO CAN0 [14:15]
+	- Pmod JF pins
+		- TX: 10
+		- RX: 9
 
 ### GPIO
 
@@ -75,7 +65,13 @@ Pmod JA -> GPIO_0[8:15]
 
 ## IP Blocks:
 
-TBD
+Current IP Blocks
+- SBAND_I2C
+- GPS_UART
+- DFGM_UART
+- SPI_0_1
+- SPI_0_0
+- GPIO_0
 
 ## Troubleshooting
 
