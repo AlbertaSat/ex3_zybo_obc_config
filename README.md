@@ -34,12 +34,12 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 ### UART (4)
 - EMIO UART0 (GPS)
 	- Pmod JB pins
-		- TX: 4
-		- RX: 7
+		- TX: 7
+		- RX: 8
 - AXI UART2 (DFGM)
 	- Pmod JB pins
-		- TX: 8
-		- RX: 9
+		- TX: 3
+		- RX: 4
 - MIO UART0 [10:11] (UHF)
 	- Pmod JF Pins
  		- TX: 3
@@ -61,7 +61,8 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 
 Pmod JE -> GPIO_0[0:7]
 Pmod JA -> GPIO_0[8:15]
-
+Pmod JC -> GPIO_0[16:23]
+Pmod JB -> GPIO_0[24:25] (Pins 9 and 10 respectively)
 
 ## IP Blocks:
 
