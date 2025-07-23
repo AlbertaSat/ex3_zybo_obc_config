@@ -32,7 +32,7 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
     	- SS:  10
 
 ### UART (4)
-- EMIO UART0 (GPS)
+- AXI UART0 (GPS)
 	- Pmod JB pins
 		- TX: 7
 		- RX: 8
