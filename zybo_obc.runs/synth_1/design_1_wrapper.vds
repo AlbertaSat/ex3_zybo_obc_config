@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Jul 24 11:43:45 2025
-# Process ID: 22036
+# Start of session at: Thu Jul 24 12:37:41 2025
+# Process ID: 20032
 # Current directory: C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/design_1_wrapper.vds
@@ -11,7 +11,7 @@
 # Running On: FAROOQ, OS: Windows, CPU Frequency: 1690 MHz, CPU Physical cores: 4, Host memory: 12598 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 430.246 ; gain = 104.988
+create_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 429.281 ; gain = 96.766
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/faroo/ex3_zybo_obc_config/vivado-library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
@@ -27,10 +27,10 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24288
+INFO: [Synth 8-7075] Helper process launched with PID 24048
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1294.297 ; gain = 408.426
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1294.777 ; gain = 409.336
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:53]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'DB_I2C_scl_iobuf' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:235]
@@ -69,14 +69,14 @@ INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'SBAND_I2C_sda_iobuf' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:452]
 INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2740' bound to instance 'design_1_i' of component 'design_1' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:459]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2793]
-INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_SBAND' of component 'design_1_axi_iic_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3269]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_2_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_axi_uartlite_2_0_stub.vhdl:5' bound to instance 'axi_uartlite_dfgm' of component 'design_1_axi_uartlite_2_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3299]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_2_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_axi_uartlite_2_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_gps' of component 'design_1_axi_uartlite_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3324]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3349]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_processing_system7_0_0_stub.vhdl:100]
+INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_SBAND' of component 'design_1_axi_iic_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3269]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_2_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_uartlite_2_0_stub.vhdl:5' bound to instance 'axi_uartlite_dfgm' of component 'design_1_axi_uartlite_2_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3299]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_2_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_uartlite_2_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_gps' of component 'design_1_axi_uartlite_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3324]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3349]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_processing_system7_0_0_stub.vhdl:100]
 INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1397]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
@@ -95,14 +95,14 @@ INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_16EQN6L' (0#1) [c
 INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_X61OAK' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:808]
 INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_X61OAK' (0#1) [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:808]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:938]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1121]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1121]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:938]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2394]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2394]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1397]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_2' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_2' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3648]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_2' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-22036-FAROOQ/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_2' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_2' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3648]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_2' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:21]
 INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3661]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
@@ -212,18 +212,18 @@ WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1399.094 ; gain = 513.223
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1399.734 ; gain = 514.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1399.094 ; gain = 513.223
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1399.734 ; gain = 514.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1399.094 ; gain = 513.223
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1399.734 ; gain = 514.293
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1399.094 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1399.734 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -252,24 +252,24 @@ Parsing XDC File [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/dont_
 Finished Parsing XDC File [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1481.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1488.832 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 32 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1481.785 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1488.832 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -545,10 +545,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_gps. (con
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_dfgm. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -571,25 +571,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -607,37 +607,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -672,18 +672,18 @@ Report Cell Usage:
 |10    |OBUF                                 |     5|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1481.785 ; gain = 513.223
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1481.785 ; gain = 595.914
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1488.832 ; gain = 514.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1481.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1488.832 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1481.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1488.832 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 32 instances
@@ -692,7 +692,7 @@ Synth Design complete, checksum: a714a7a1
 INFO: [Common 17-83] Releasing license: Synthesis
 107 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 1481.785 ; gain = 1000.883
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1488.832 ; gain = 1009.023
 INFO: [Common 17-1381] The checkpoint 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 24 11:44:43 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 24 12:39:47 2025...
