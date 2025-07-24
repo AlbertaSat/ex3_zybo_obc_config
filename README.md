@@ -59,7 +59,7 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 - Pmod JA -> GPIO_0[8:15]
 - Pmod JC -> GPIO_0[16:23]
 - Pmod JB -> GPIO_0[24:25] (Pins 9 and 10 respectively)
-- PMOD JD -> GPIO_0[26:27] (Pinsd 9 and 10 respectively)
+- PMOD JD -> GPIO_0[26:27] (Pins 9 and 10 respectively)
 
 ## IP Blocks:
 
