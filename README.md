@@ -55,8 +55,6 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 
 ### GPIO
 
-16 GPIO pins
-
 - Pmod JE -> GPIO_0[0:7]
 - Pmod JA -> GPIO_0[8:15]
 - Pmod JC -> GPIO_0[16:23]
