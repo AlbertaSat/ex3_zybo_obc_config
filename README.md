@@ -24,12 +24,10 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 
 - EMIO SPI1 (S-Band)
 	- Pmod JD pins
-		- IO0: 3
-		- IO1: 4
-		- SCK: 7
-		- SS1: 8
-  		- SS2: 9
-    	- SS:  10
+		- SCLK: 3
+		- MOSI: 4
+		- MISO: 7
+		- SS: 8
 
 ### UART (4)
 - AXI UART0 (GPS)
@@ -63,6 +61,7 @@ Pmod JE -> GPIO_0[0:7]
 Pmod JA -> GPIO_0[8:15]
 Pmod JC -> GPIO_0[16:23]
 Pmod JB -> GPIO_0[24:25] (Pins 9 and 10 respectively)
+PMOD JD -> GPIO_0[26:27] (Pinsd 9 and 10 respectively)
 
 ## IP Blocks:
 
