@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Thu Jul 17 22:37:02 2025
+// Date        : Tue Jul 22 19:45:58 2025
 // Host        : FAROOQ running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_xbar_0 -prefix
+//               design_1_xbar_0_ design_1_xbar_0_stub.v
 // Design      : design_1_xbar_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Jul 17 22:05:09 2025
-# Process ID: 616
+# Start of session at: Thu Jul 24 11:04:52 2025
+# Process ID: 21152
 # Current directory: C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_uartlite_2_0_synth_1
 # Command line: vivado.exe -log design_1_axi_uartlite_2_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_uartlite_2_0.tcl
 # Log file: C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_uartlite_2_0_synth_1/design_1_axi_uartlite_2_0.vds
@@ -11,7 +11,7 @@
 # Running On: FAROOQ, OS: Windows, CPU Frequency: 1690 MHz, CPU Physical cores: 4, Host memory: 12598 MB
 #-----------------------------------------------------------
 source design_1_axi_uartlite_2_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 428.566 ; gain = 102.527
+create_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 429.055 ; gain = 108.004
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/faroo/ex3_zybo_obc_config/vivado-library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
@@ -24,10 +24,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9292
+INFO: [Synth 8-7075] Helper process launched with PID 3308
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1273.742 ; gain = 408.207
+Starting RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1276.332 ; gain = 407.113
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_2_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/synth/design_1_axi_uartlite_2_0.vhd:86]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -133,20 +133,20 @@ WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either uncon
 WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port bus2ip_cs in module uartlite_core is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1380.859 ; gain = 515.324
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 1381.387 ; gain = 512.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1380.859 ; gain = 515.324
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 1381.387 ; gain = 512.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1380.859 ; gain = 515.324
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 1381.387 ; gain = 512.168
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1380.859 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1390.309 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -161,30 +161,30 @@ Parsing XDC File [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_
 Finished Parsing XDC File [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_uartlite_2_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1479.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1494.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   FDR => FDRE: 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1480.180 ; gain = 0.816
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1494.656 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:01:10 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:01:10 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_uartlite_2_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:10 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -197,7 +197,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -271,25 +271,25 @@ WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module axi_uartlite is either unc
 INFO: [Synth 8-3332] Sequential element (UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_uartlite.
 INFO: [Synth 8-3332] Sequential element (UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_uartlite.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:23 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:44 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:46 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:47 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -307,37 +307,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:02:02 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:02:02 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:02:02 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:02:02 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:02:02 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:02:02 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -389,18 +389,18 @@ Report Cell Usage:
 |11    |FDSE   |    18|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:02:02 . Memory (MB): peak = 1494.656 ; gain = 625.438
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1480.180 ; gain = 515.324
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1480.180 ; gain = 614.645
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:49 . Memory (MB): peak = 1494.656 ; gain = 512.168
+Synthesis Optimization Complete : Time (s): cpu = 00:01:44 ; elapsed = 00:02:03 . Memory (MB): peak = 1494.656 ; gain = 625.438
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1480.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1494.656 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1480.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1494.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   FDR => FDRE: 4 instances
@@ -409,9 +409,9 @@ Synth Design complete, checksum: de5890c2
 INFO: [Common 17-83] Releasing license: Synthesis
 71 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 1480.180 ; gain = 1016.848
+synth_design: Time (s): cpu = 00:02:04 ; elapsed = 00:02:28 . Memory (MB): peak = 1494.656 ; gain = 1030.148
 INFO: [Common 17-1381] The checkpoint 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_uartlite_2_0_synth_1/design_1_axi_uartlite_2_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 19 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/design_1_axi_uartlite_2_0_synth_1/design_1_axi_uartlite_2_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_uartlite_2_0_utilization_synth.rpt -pb design_1_axi_uartlite_2_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 17 22:06:23 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 24 11:08:14 2025...

@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_axi_uartlite_2_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -81,7 +82,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.cache/wt [current_project]
 set_property parent.project_path C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.2 [current_project]
@@ -91,7 +92,7 @@ set_property ip_output_repo c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.cache/ip
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0.xci
+read_ip -quiet C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0.xdc]

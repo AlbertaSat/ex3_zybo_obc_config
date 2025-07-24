@@ -295,7 +295,7 @@
         "PCW_USE_EXPANDED_PS_SLCR_REGISTERS": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "PCW_USE_CORESIGHT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_EN_EMIO_SRAM_INT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "PCW_GPIO_EMIO_GPIO_WIDTH": [ { "value": "64", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "PCW_GPIO_EMIO_GPIO_WIDTH": [ { "value": "28", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_GP0_NUM_WRITE_THREADS": [ { "value": "4", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_GP0_NUM_READ_THREADS": [ { "value": "4", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_GP1_NUM_WRITE_THREADS": [ { "value": "4", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -326,7 +326,7 @@
         "PCW_S_AXI_HP2_DATA_WIDTH": [ { "value": "64", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_S_AXI_HP3_ID_WIDTH": [ { "value": "6", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "PCW_S_AXI_HP3_DATA_WIDTH": [ { "value": "64", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "PCW_NUM_F2P_INTR_INPUTS": [ { "value": "5", "value_src": "propagated", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "PCW_NUM_F2P_INTR_INPUTS": [ { "value": "3", "value_src": "propagated", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_EN_DDR": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_EN_SMC": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "PCW_EN_QSPI": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -583,7 +583,7 @@
         "PCW_GPIO_MIO_GPIO_ENABLE": [ { "value": "1", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PCW_GPIO_MIO_GPIO_IO": [ { "value": "MIO", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PCW_GPIO_EMIO_GPIO_ENABLE": [ { "value": "1", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
-        "PCW_GPIO_EMIO_GPIO_IO": [ { "value": "64", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "PCW_GPIO_EMIO_GPIO_IO": [ { "value": "28", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PCW_APU_CLK_RATIO_ENABLE": [ { "value": "6:2:1", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PCW_ENET0_PERIPHERAL_FREQMHZ": [ { "value": "1000 Mbps", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "PCW_ENET1_PERIPHERAL_FREQMHZ": [ { "value": "1000 Mbps", "value_src": "user", "resolve_type": "user", "enabled": false, "usage": "all" } ],
@@ -897,7 +897,7 @@
         "USE_TRACE_DATA_EDGE_DETECTOR": [ { "value": "0", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
         "C_TRACE_PIPELINE_WIDTH": [ { "value": "8", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
         "C_TRACE_BUFFER_CLOCK_DELAY": [ { "value": "12", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
-        "C_EMIO_GPIO_WIDTH": [ { "value": "64", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
+        "C_EMIO_GPIO_WIDTH": [ { "value": "28", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
         "C_INCLUDE_ACP_TRANS_CHECK": [ { "value": "0", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
         "C_USE_DEFAULT_ACP_USER_VAL": [ { "value": "0", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
         "C_S_AXI_ACP_ARUSER_VAL": [ { "value": "31", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
@@ -919,7 +919,7 @@
         "C_S_AXI_HP3_DATA_WIDTH": [ { "value": "64", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
         "C_M_AXI_GP0_THREAD_ID_WIDTH": [ { "value": "12", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
         "C_M_AXI_GP1_THREAD_ID_WIDTH": [ { "value": "12", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
-        "C_NUM_F2P_INTR_INPUTS": [ { "value": "5", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
+        "C_NUM_F2P_INTR_INPUTS": [ { "value": "3", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
         "C_IRQ_F2P_MODE": [ { "value": "DIRECT", "resolve_type": "dependent", "usage": "all" } ],
         "C_DQ_WIDTH": [ { "value": "32", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
         "C_DQS_WIDTH": [ { "value": "4", "resolve_type": "dependent", "format": "long", "usage": "all" } ],
@@ -973,9 +973,9 @@
     },
     "boundary": {
       "ports": {
-        "GPIO_I": [ { "direction": "in", "size_left": "63", "size_right": "0", "driver_value": "0" } ],
-        "GPIO_O": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
-        "GPIO_T": [ { "direction": "out", "size_left": "63", "size_right": "0" } ],
+        "GPIO_I": [ { "direction": "in", "size_left": "27", "size_right": "0", "driver_value": "0" } ],
+        "GPIO_O": [ { "direction": "out", "size_left": "27", "size_right": "0" } ],
+        "GPIO_T": [ { "direction": "out", "size_left": "27", "size_right": "0" } ],
         "I2C1_SDA_I": [ { "direction": "in", "driver_value": "0" } ],
         "I2C1_SDA_O": [ { "direction": "out" } ],
         "I2C1_SDA_T": [ { "direction": "out" } ],
@@ -1038,7 +1038,7 @@
         "M_AXI_GP0_BRESP": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
         "M_AXI_GP0_RRESP": [ { "direction": "in", "size_left": "1", "size_right": "0", "driver_value": "0" } ],
         "M_AXI_GP0_RDATA": [ { "direction": "in", "size_left": "31", "size_right": "0", "driver_value": "0" } ],
-        "IRQ_F2P": [ { "direction": "in", "size_left": "4", "size_right": "0", "driver_value": "0" } ],
+        "IRQ_F2P": [ { "direction": "in", "size_left": "2", "size_right": "0", "driver_value": "0" } ],
         "FCLK_CLK0": [ { "direction": "out" } ],
         "FCLK_RESET0_N": [ { "direction": "out" } ],
         "MIO": [ { "direction": "inout", "size_left": "53", "size_right": "0" } ],
@@ -1286,8 +1286,8 @@
           "abstraction_type": "xilinx.com:signal:interrupt_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "SENSITIVITY": [ { "value": "EDGE_RISING:EDGE_RISING:LEVEL_HIGH:EDGE_RISING:EDGE_RISING", "value_src": "propagated", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
-            "PortWidth": [ { "value": "5", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ]
+            "SENSITIVITY": [ { "value": "EDGE_RISING:LEVEL_HIGH:EDGE_RISING", "value_src": "propagated", "value_permission": "bd", "resolve_type": "generated", "is_static_object": false } ],
+            "PortWidth": [ { "value": "3", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_static_object": false } ]
           },
           "port_maps": {
             "INTERRUPT": [ { "physical_name": "IRQ_F2P" } ]
