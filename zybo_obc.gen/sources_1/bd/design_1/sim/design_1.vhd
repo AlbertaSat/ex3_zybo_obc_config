@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
---Date        : Thu Jul 24 12:33:07 2025
+--Date        : Fri Aug  1 20:35:13 2025
 --Host        : FAROOQ running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2762,15 +2762,15 @@ entity design_1 is
     DDR_we_n : inout STD_LOGIC;
     DFGM_UART_rxd : in STD_LOGIC;
     DFGM_UART_txd : out STD_LOGIC;
+    EMIO_GPIO_tri_i : in STD_LOGIC_VECTOR ( 27 downto 0 );
+    EMIO_GPIO_tri_o : out STD_LOGIC_VECTOR ( 27 downto 0 );
+    EMIO_GPIO_tri_t : out STD_LOGIC_VECTOR ( 27 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    GPIO_tri_i : in STD_LOGIC_VECTOR ( 27 downto 0 );
-    GPIO_tri_o : out STD_LOGIC_VECTOR ( 27 downto 0 );
-    GPIO_tri_t : out STD_LOGIC_VECTOR ( 27 downto 0 );
     GPS_UART_rxd : in STD_LOGIC;
     GPS_UART_txd : out STD_LOGIC;
     SBAND_I2C_scl_i : in STD_LOGIC;
@@ -3129,7 +3129,7 @@ architecture STRUCTURE of design_1 is
   signal ps7_0_axi_periph_M06_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal NLW_axi_iic_SBAND_gpo_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_axi_iic_sband_gpo_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_processing_system7_0_SPI0_MISO_O_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_SPI0_MISO_T_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_SPI0_MOSI_T_UNCONNECTED : STD_LOGIC;
@@ -3238,18 +3238,18 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of DDR_dq : signal is "xilinx.com:interface:ddrx:1.0 DDR DQ";
   attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
+  attribute X_INTERFACE_INFO of EMIO_GPIO_tri_i : signal is "xilinx.com:interface:gpio:1.0 EMIO_GPIO ";
+  attribute X_INTERFACE_INFO of EMIO_GPIO_tri_o : signal is "xilinx.com:interface:gpio:1.0 EMIO_GPIO ";
+  attribute X_INTERFACE_INFO of EMIO_GPIO_tri_t : signal is "xilinx.com:interface:gpio:1.0 EMIO_GPIO ";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
-  attribute X_INTERFACE_INFO of GPIO_tri_i : signal is "xilinx.com:interface:gpio:1.0 GPIO TRI_I";
-  attribute X_INTERFACE_INFO of GPIO_tri_o : signal is "xilinx.com:interface:gpio:1.0 GPIO TRI_O";
-  attribute X_INTERFACE_INFO of GPIO_tri_t : signal is "xilinx.com:interface:gpio:1.0 GPIO TRI_T";
 begin
   DB_I2C_scl_o <= processing_system7_0_IIC_1_SCL_O;
   DB_I2C_scl_t <= processing_system7_0_IIC_1_SCL_T;
   DB_I2C_sda_o <= processing_system7_0_IIC_1_SDA_O;
   DB_I2C_sda_t <= processing_system7_0_IIC_1_SDA_T;
   DFGM_UART_txd <= axi_uartlite_2_UART_TxD;
-  GPIO_tri_o(27 downto 0) <= processing_system7_0_GPIO_0_TRI_O(27 downto 0);
-  GPIO_tri_t(27 downto 0) <= processing_system7_0_GPIO_0_TRI_T(27 downto 0);
+  EMIO_GPIO_tri_o(27 downto 0) <= processing_system7_0_GPIO_0_TRI_O(27 downto 0);
+  EMIO_GPIO_tri_t(27 downto 0) <= processing_system7_0_GPIO_0_TRI_T(27 downto 0);
   GPS_UART_txd <= axi_uartlite_0_UART_TxD;
   SBAND_I2C_scl_o <= axi_iic_0_IIC_SCL_O;
   SBAND_I2C_scl_t <= axi_iic_0_IIC_SCL_T;
@@ -3263,12 +3263,12 @@ begin
   axi_iic_0_IIC_SDA_I <= SBAND_I2C_sda_i;
   axi_uartlite_0_UART_RxD <= GPS_UART_rxd;
   axi_uartlite_2_UART_RxD <= DFGM_UART_rxd;
-  processing_system7_0_GPIO_0_TRI_I(27 downto 0) <= GPIO_tri_i(27 downto 0);
+  processing_system7_0_GPIO_0_TRI_I(27 downto 0) <= EMIO_GPIO_tri_i(27 downto 0);
   processing_system7_0_IIC_1_SCL_I <= DB_I2C_scl_i;
   processing_system7_0_IIC_1_SDA_I <= DB_I2C_sda_i;
-axi_iic_SBAND: component design_1_axi_iic_0_0
+axi_iic_sband: component design_1_axi_iic_0_0
      port map (
-      gpo(0) => NLW_axi_iic_SBAND_gpo_UNCONNECTED(0),
+      gpo(0) => NLW_axi_iic_sband_gpo_UNCONNECTED(0),
       iic2intc_irpt => axi_iic_SBAND_iic2intc_irpt,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(8 downto 0),

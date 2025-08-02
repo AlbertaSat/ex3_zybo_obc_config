@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Jul 24 12:37:41 2025
-# Process ID: 20032
+# Start of session at: Fri Aug  1 20:42:18 2025
+# Process ID: 20280
 # Current directory: C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/design_1_wrapper.vds
@@ -11,10 +11,11 @@
 # Running On: FAROOQ, OS: Windows, CPU Frequency: 1690 MHz, CPU Physical cores: 4, Host memory: 12598 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 429.281 ; gain = 96.766
+create_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 430.855 ; gain = 106.715
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/faroo/ex3_zybo_obc_config/vivado-library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 466.406 ; gain = 11.684
 Command: read_checkpoint -auto_incremental -incremental C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -27,56 +28,56 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24048
+INFO: [Synth 8-7075] Helper process launched with PID 9244
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1294.777 ; gain = 409.336
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1296.801 ; gain = 409.113
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:53]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'DB_I2C_scl_iobuf' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:235]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'DB_I2C_sda_iobuf' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:242]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_0' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:249]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_1' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:256]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_10' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:263]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_11' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:270]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_12' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:277]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_13' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:284]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_14' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:291]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_15' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:298]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_16' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:305]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_17' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:312]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_18' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:319]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_19' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:326]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_2' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:333]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_20' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:340]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_21' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:347]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_22' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:354]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_23' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:361]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_24' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:368]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_25' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:375]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_26' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:382]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_27' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:389]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_3' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:396]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_4' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:403]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_5' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:410]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_6' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:417]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_7' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:424]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_8' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:431]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'GPIO_tri_iobuf_9' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:438]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_0' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:249]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_1' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:256]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_10' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:263]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_11' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:270]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_12' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:277]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_13' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:284]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_14' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:291]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_15' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:298]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_16' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:305]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_17' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:312]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_18' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:319]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_19' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:326]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_2' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:333]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_20' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:340]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_21' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:347]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_22' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:354]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_23' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:361]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_24' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:368]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_25' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:375]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_26' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:382]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_27' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:389]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_3' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:396]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_4' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:403]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_5' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:410]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_6' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:417]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_7' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:424]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_8' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:431]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'EMIO_GPIO_tri_iobuf_9' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:438]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'SBAND_I2C_scl_iobuf' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:445]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'SBAND_I2C_sda_iobuf' of component 'IOBUF' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:452]
 INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2740' bound to instance 'design_1_i' of component 'design_1' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:459]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2793]
-INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_SBAND' of component 'design_1_axi_iic_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3269]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_2_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_uartlite_2_0_stub.vhdl:5' bound to instance 'axi_uartlite_dfgm' of component 'design_1_axi_uartlite_2_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3299]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_2_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_uartlite_2_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_gps' of component 'design_1_axi_uartlite_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3324]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3349]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_processing_system7_0_0_stub.vhdl:100]
+INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_sband' of component 'design_1_axi_iic_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3269]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_2_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_axi_uartlite_2_0_stub.vhdl:5' bound to instance 'axi_uartlite_dfgm' of component 'design_1_axi_uartlite_2_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3299]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_2_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_axi_uartlite_2_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_gps' of component 'design_1_axi_uartlite_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3324]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3349]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_processing_system7_0_0_stub.vhdl:100]
 INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1397]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
@@ -95,14 +96,14 @@ INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_16EQN6L' (0#1) [c
 INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_X61OAK' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:808]
 INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_X61OAK' (0#1) [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:808]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:938]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1121]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1121]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:938]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2394]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2394]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1397]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_2' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_2' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3648]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_2' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20032-FAROOQ/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_2' declared at 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_2' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3648]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_2' [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-20280-FAROOQ/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:21]
 INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3661]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
@@ -212,18 +213,18 @@ WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1399.734 ; gain = 514.293
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1399.973 ; gain = 512.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1399.734 ; gain = 514.293
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1399.973 ; gain = 512.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1399.734 ; gain = 514.293
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1399.973 ; gain = 512.285
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1399.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1399.973 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -232,8 +233,8 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Finished Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
-Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_SBAND'
-Finished Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_SBAND'
+Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_sband'
+Finished Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_sband'
 Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Finished Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
@@ -245,31 +246,60 @@ Finished Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sourc
 Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_dfgm'
 Finished Parsing XDC File [c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_dfgm'
 Parsing XDC File [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[8]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[9]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[10]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[11]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[12]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[13]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[14]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[15]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[24]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[25]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[16]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[17]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[18]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[19]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[20]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[21]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[22]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[23]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[26]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[27]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[0]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[1]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[2]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[3]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[4]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[5]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[6]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_tri_io[7]'. [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc:155]
 Finished Parsing XDC File [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1488.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1480.648 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 32 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1488.832 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1480.648 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -536,7 +566,7 @@ Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint fi
 Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/faroo/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 261).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_iic_SBAND. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_iic_sband. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
@@ -545,10 +575,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_gps. (con
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_dfgm. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -571,25 +601,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -607,37 +637,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -672,27 +702,27 @@ Report Cell Usage:
 |10    |OBUF                                 |     5|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1480.648 ; gain = 592.961
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1488.832 ; gain = 514.293
-Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1488.832 ; gain = 603.391
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:57 . Memory (MB): peak = 1480.648 ; gain = 512.285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1480.648 ; gain = 592.961
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1488.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1480.648 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1488.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1480.648 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 32 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 32 instances
 
-Synth Design complete, checksum: a714a7a1
+Synth Design complete, checksum: 9833afb
 INFO: [Common 17-83] Releasing license: Synthesis
-107 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+107 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1488.832 ; gain = 1009.023
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 1480.648 ; gain = 1000.430
 INFO: [Common 17-1381] The checkpoint 'C:/Users/faroo/ex3_zybo_obc_config/zybo_obc.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 24 12:39:47 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  1 20:44:50 2025...

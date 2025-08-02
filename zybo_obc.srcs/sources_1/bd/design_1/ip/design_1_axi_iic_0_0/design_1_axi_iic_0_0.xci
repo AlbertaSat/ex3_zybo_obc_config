@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "design_1_axi_iic_0_0",
-    "cell_name": "axi_iic_SBAND",
+    "cell_name": "axi_iic_sband",
     "component_reference": "xilinx.com:ip:axi_iic:2.1",
     "ip_revision": "3",
     "gen_directory": "../../../../../../zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0",
