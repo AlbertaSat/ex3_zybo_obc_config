@@ -13,8 +13,8 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 ### I2C (2)
 - EMIO I2C1 (Daedalus)
 	- Pmod JB pins
-		- SDA: 1
-		- SCL: 2
+		- SDA: 2
+		- SCL: 1
 - AXI I2C0 (S-Band)
 	- Pmod JD pins
 		- SDA: 2
@@ -53,7 +53,7 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 		- TX: 10
 		- RX: 9
 
-### GPIO
+### EMIO GPIO
 
 - Pmod JE -> GPIO_0[0:7]
 - Pmod JA -> GPIO_0[8:15]
