@@ -3229,7 +3229,12 @@
         "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
         "xci_name": "design_1_axi_uartlite_0_1",
         "xci_path": "ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1.xci",
-        "inst_hier_path": "axi_uartlite_heracles"
+        "inst_hier_path": "axi_uartlite_heracles",
+        "parameters": {
+          "C_BAUDRATE": {
+            "value": "115200"
+          }
+        }
       }
     },
     "interface_nets": {

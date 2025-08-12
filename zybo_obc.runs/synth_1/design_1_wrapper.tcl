@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 6
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -91,19 +90,19 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 add_files /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc]
-set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc]
-set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_2_0/design_1_axi_uartlite_2_0.xdc]
+set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_board.xdc]
+set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xdc]
+set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1.xdc]

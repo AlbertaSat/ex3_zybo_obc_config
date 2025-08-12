@@ -2,13 +2,13 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Aug 12 13:10:42 2025
-# Process ID: 2071632
+# Start of session at: Tue Aug 12 13:59:06 2025
+# Process ID: 2125095
 # Current directory: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/design_1_wrapper.vds
 # Journal file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/vivado.jou
-# Running On: mothership, OS: Linux, CPU Frequency: 3839.706 MHz, CPU Physical cores: 24, Host memory: 33568 MB
+# Running On: mothership, OS: Linux, CPU Frequency: 3758.440 MHz, CPU Physical cores: 24, Host memory: 33568 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -26,12 +26,12 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2071707
+INFO: [Synth 8-7075] Helper process launched with PID 2125159
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jacques/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2219.719 ; gain = 373.738 ; free physical = 10290 ; free virtual = 43133
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.101; parent = 1186.170; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3843.477; parent = 2222.691; children = 1620.785
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2217.750 ; gain = 371.770 ; free physical = 8976 ; free virtual = 42340
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.099; parent = 1188.259; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3842.504; parent = 2221.723; children = 1620.781
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:55]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/jacques/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'DB_I2C_scl_iobuf' of component 'IOBUF' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:227]
@@ -67,16 +67,16 @@ INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/jacques/Xilinx/Vivado/202
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/jacques/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902' bound to instance 'SBAND_I2C_sda_iobuf' of component 'IOBUF' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:423]
 INFO: [Synth 8-3491] module 'design_1' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2681' bound to instance 'design_1_i' of component 'design_1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:430]
 INFO: [Synth 8-638] synthesizing module 'design_1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2736]
-INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_sband' of component 'design_1_axi_iic_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3252]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_2_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_axi_uartlite_2_0_stub.vhdl:5' bound to instance 'axi_uartlite_dfgm' of component 'design_1_axi_uartlite_2_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3282]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_2_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_axi_uartlite_2_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_gps' of component 'design_1_axi_uartlite_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3307]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_1' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_axi_uartlite_0_1_stub.vhdl:5' bound to instance 'axi_uartlite_heracles' of component 'design_1_axi_uartlite_0_1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3332]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_axi_uartlite_0_1_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3357]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_processing_system7_0_0_stub.vhdl:100]
+INFO: [Synth 8-3491] module 'design_1_axi_iic_0_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_axi_iic_0_0_stub.vhdl:5' bound to instance 'axi_iic_sband' of component 'design_1_axi_iic_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3252]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_iic_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_axi_iic_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_2_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_axi_uartlite_2_0_stub.vhdl:5' bound to instance 'axi_uartlite_dfgm' of component 'design_1_axi_uartlite_2_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3282]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_2_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_axi_uartlite_2_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_gps' of component 'design_1_axi_uartlite_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3307]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_1' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_axi_uartlite_0_1_stub.vhdl:5' bound to instance 'axi_uartlite_heracles' of component 'design_1_axi_uartlite_0_1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3332]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_axi_uartlite_0_1_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3357]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_processing_system7_0_0_stub.vhdl:100]
 INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1385]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
@@ -95,14 +95,14 @@ INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_16EQN6L' (0#1) [/
 INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_X61OAK' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:798]
 INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_X61OAK' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:798]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:928]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1111]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1111]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:928]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2372]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:2372]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:1385]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_2' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_2' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3654]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_2' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2071632-mothership/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_50M_2' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:5' bound to instance 'rst_ps7_0_50M' of component 'design_1_rst_ps7_0_50M_2' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3654]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_50M_2' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/.Xil/Vivado-2125095-mothership/realtime/design_1_rst_ps7_0_50M_2_stub.vhdl:21]
 INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/synth/design_1.vhd:3667]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
@@ -212,24 +212,24 @@ WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2297.656 ; gain = 451.676 ; free physical = 10302 ; free virtual = 43147
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.101; parent = 1186.170; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3918.445; parent = 2297.660; children = 1620.785
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2297.688 ; gain = 451.707 ; free physical = 9058 ; free virtual = 42425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.099; parent = 1188.259; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3918.473; parent = 2297.691; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2315.469 ; gain = 469.488 ; free physical = 10310 ; free virtual = 43154
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.101; parent = 1186.170; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3936.258; parent = 2315.473; children = 1620.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2315.500 ; gain = 469.520 ; free physical = 9068 ; free virtual = 42425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.099; parent = 1188.259; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3936.285; parent = 2315.504; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2315.469 ; gain = 469.488 ; free physical = 10318 ; free virtual = 43162
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.101; parent = 1186.170; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3936.258; parent = 2315.473; children = 1620.785
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2315.500 ; gain = 469.520 ; free physical = 9068 ; free virtual = 42425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.099; parent = 1188.259; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3936.285; parent = 2315.504; children = 1620.781
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2321.406 ; gain = 0.000 ; free physical = 10315 ; free virtual = 43159
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2321.438 ; gain = 0.000 ; free physical = 9044 ; free virtual = 42402
 INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -250,8 +250,8 @@ Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sou
 Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
 Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
-Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_heracles'
-Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_heracles'
+Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_heracles'
+Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_heracles'
 Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc]
 Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.srcs/constrs_1/new/Zybo-Z7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -260,28 +260,28 @@ Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/sy
 Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2475.219 ; gain = 0.000 ; free physical = 10320 ; free virtual = 43092
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2474.250 ; gain = 0.000 ; free physical = 9019 ; free virtual = 42344
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 29 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 29 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2475.219 ; gain = 0.000 ; free physical = 10320 ; free virtual = 43092
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2474.250 ; gain = 0.000 ; free physical = 9019 ; free virtual = 42344
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jacques/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10346 ; free virtual = 43118
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.101; parent = 1186.170; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 9036 ; free virtual = 42335
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.099; parent = 1188.259; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10346 ; free virtual = 43118
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.101; parent = 1186.170; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 9036 ; free virtual = 42335
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.099; parent = 1188.259; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -558,14 +558,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. 
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_50M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_heracles. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10345 ; free virtual = 43117
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.101; parent = 1186.170; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 9036 ; free virtual = 42335
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.099; parent = 1188.259; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10341 ; free virtual = 43116
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.101; parent = 1186.170; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 9038 ; free virtual = 42338
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.099; parent = 1188.259; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -588,33 +588,33 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10350 ; free virtual = 43129
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.101; parent = 1186.170; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 9039 ; free virtual = 42343
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1373.099; parent = 1188.259; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10283 ; free virtual = 43064
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1443.151; parent = 1256.283; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8975 ; free virtual = 42274
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1443.470; parent = 1258.698; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10283 ; free virtual = 43062
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1443.409; parent = 1256.541; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8975 ; free virtual = 42274
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1443.728; parent = 1258.956; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10263 ; free virtual = 43042
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1444.690; parent = 1257.822; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8975 ; free virtual = 42274
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.110; parent = 1260.339; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -632,49 +632,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10269 ; free virtual = 43053
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1444.972; parent = 1258.104; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8968 ; free virtual = 42268
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.392; parent = 1260.620; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10269 ; free virtual = 43053
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1444.972; parent = 1258.104; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8968 ; free virtual = 42268
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.392; parent = 1260.620; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10269 ; free virtual = 43053
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.050; parent = 1258.182; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8968 ; free virtual = 42268
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.470; parent = 1260.698; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10269 ; free virtual = 43053
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.112; parent = 1258.244; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8968 ; free virtual = 42269
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.532; parent = 1260.761; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10269 ; free virtual = 43053
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.112; parent = 1258.244; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8968 ; free virtual = 42269
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.532; parent = 1260.761; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10269 ; free virtual = 43053
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.128; parent = 1258.260; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8968 ; free virtual = 42269
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.548; parent = 1260.776; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -711,20 +711,20 @@ Report Cell Usage:
 |11    |OBUF                                 |     6|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10269 ; free virtual = 43053
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.144; parent = 1258.275; children = 186.931
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.992; parent = 2443.207; children = 1620.785
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 8976 ; free virtual = 42277
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1445.563; parent = 1260.792; children = 184.840
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4063.020; parent = 2442.238; children = 1620.781
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2475.219 ; gain = 469.488 ; free physical = 10324 ; free virtual = 43109
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2475.219 ; gain = 629.238 ; free physical = 10325 ; free virtual = 43109
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2474.250 ; gain = 469.520 ; free physical = 9034 ; free virtual = 42334
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2474.250 ; gain = 628.270 ; free physical = 9034 ; free virtual = 42334
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:00 . Memory (MB): peak = 2475.219 ; gain = 0.000 ; free physical = 10435 ; free virtual = 43219
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2474.250 ; gain = 0.000 ; free physical = 9026 ; free virtual = 42335
 INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2475.219 ; gain = 0.000 ; free physical = 10382 ; free virtual = 43165
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2474.250 ; gain = 0.000 ; free physical = 9068 ; free virtual = 42376
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 29 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 29 instances
@@ -733,7 +733,7 @@ Synth Design complete, checksum: 403679a4
 INFO: [Common 17-83] Releasing license: Synthesis
 106 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2475.219 ; gain = 935.832 ; free physical = 10478 ; free virtual = 43261
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2474.250 ; gain = 934.926 ; free physical = 9267 ; free virtual = 42575
 INFO: [Common 17-1381] The checkpoint '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 12 13:11:04 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 12 13:59:28 2025...

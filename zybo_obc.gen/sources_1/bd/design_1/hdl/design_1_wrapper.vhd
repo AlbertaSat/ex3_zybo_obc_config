@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
---Date        : Tue Aug 12 12:54:14 2025
+--Date        : Tue Aug 12 13:58:04 2025
 --Host        : mothership running 64-bit Nobara Linux 42 (Workstation Edition)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -95,12 +95,12 @@ architecture STRUCTURE of design_1_wrapper is
     EMIO_GPIO_tri_i : in STD_LOGIC_VECTOR ( 24 downto 0 );
     EMIO_GPIO_tri_o : out STD_LOGIC_VECTOR ( 24 downto 0 );
     EMIO_GPIO_tri_t : out STD_LOGIC_VECTOR ( 24 downto 0 );
+    HERACLES_UART_rxd : in STD_LOGIC;
+    HERACLES_UART_txd : out STD_LOGIC;
     SBAND_SPI_SCLK_O : out STD_LOGIC;
     SBAND_SPI_MOSI_O : out STD_LOGIC;
     SBAND_SPI_MISO_I : in STD_LOGIC;
-    SBAND_SPI_SS_O : out STD_LOGIC;
-    HERACLES_UART_rxd : in STD_LOGIC;
-    HERACLES_UART_txd : out STD_LOGIC
+    SBAND_SPI_SS_O : out STD_LOGIC
   );
   end component design_1;
   component IOBUF is

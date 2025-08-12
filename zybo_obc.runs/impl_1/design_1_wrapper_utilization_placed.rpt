@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Tue Aug 12 13:18:31 2025
+| Date         : Tue Aug 12 14:04:36 2025
 | Host         : mothership running 64-bit Nobara Linux 42 (Workstation Edition)
 | Command      : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
 | Design       : design_1_wrapper
@@ -32,13 +32,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs                 | 1219 |     0 |          0 |     53200 |  2.29 |
-|   LUT as Logic             | 1126 |     0 |          0 |     53200 |  2.12 |
+| Slice LUTs                 | 1211 |     0 |          0 |     53200 |  2.28 |
+|   LUT as Logic             | 1118 |     0 |          0 |     53200 |  2.10 |
 |   LUT as Memory            |   93 |     0 |          0 |     17400 |  0.53 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
 |     LUT as Shift Register  |   93 |     0 |            |           |       |
-| Slice Registers            | 1349 |     0 |          0 |    106400 |  1.27 |
-|   Register as Flip Flop    | 1349 |     0 |          0 |    106400 |  1.27 |
+| Slice Registers            | 1345 |     0 |          0 |    106400 |  1.26 |
+|   Register as Flip Flop    | 1345 |     0 |          0 |    106400 |  1.26 |
 |   Register as Latch        |    0 |     0 |          0 |    106400 |  0.00 |
 | F7 Muxes                   |   11 |     0 |          0 |     26600 |  0.04 |
 | F8 Muxes                   |    4 |     0 |          0 |     13300 |  0.03 |
@@ -61,7 +61,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 120   |          Yes |         Set |            - |
-| 1229  |          Yes |       Reset |            - |
+| 1225  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -71,24 +71,24 @@ Table of Contents
 +--------------------------------------------+------+-------+------------+-----------+-------+
 |                  Site Type                 | Used | Fixed | Prohibited | Available | Util% |
 +--------------------------------------------+------+-------+------------+-----------+-------+
-| Slice                                      |  461 |     0 |          0 |     13300 |  3.47 |
-|   SLICEL                                   |  291 |     0 |            |           |       |
-|   SLICEM                                   |  170 |     0 |            |           |       |
-| LUT as Logic                               | 1126 |     0 |          0 |     53200 |  2.12 |
+| Slice                                      |  442 |     0 |          0 |     13300 |  3.32 |
+|   SLICEL                                   |  281 |     0 |            |           |       |
+|   SLICEM                                   |  161 |     0 |            |           |       |
+| LUT as Logic                               | 1118 |     0 |          0 |     53200 |  2.10 |
 |   using O5 output only                     |    0 |       |            |           |       |
-|   using O6 output only                     |  815 |       |            |           |       |
-|   using O5 and O6                          |  311 |       |            |           |       |
+|   using O6 output only                     |  804 |       |            |           |       |
+|   using O5 and O6                          |  314 |       |            |           |       |
 | LUT as Memory                              |   93 |     0 |          0 |     17400 |  0.53 |
 |   LUT as Distributed RAM                   |    0 |     0 |            |           |       |
 |   LUT as Shift Register                    |   93 |     0 |            |           |       |
 |     using O5 output only                   |    6 |       |            |           |       |
 |     using O6 output only                   |   51 |       |            |           |       |
 |     using O5 and O6                        |   36 |       |            |           |       |
-| Slice Registers                            | 1349 |     0 |          0 |    106400 |  1.27 |
-|   Register driven from within the Slice    |  814 |       |            |           |       |
-|   Register driven from outside the Slice   |  535 |       |            |           |       |
-|     LUT in front of the register is unused |  395 |       |            |           |       |
-|     LUT in front of the register is used   |  140 |       |            |           |       |
+| Slice Registers                            | 1345 |     0 |          0 |    106400 |  1.26 |
+|   Register driven from within the Slice    |  827 |       |            |           |       |
+|   Register driven from outside the Slice   |  518 |       |            |           |       |
+|     LUT in front of the register is unused |  361 |       |            |           |       |
+|     LUT in front of the register is used   |  157 |       |            |           |       |
 | Unique Control Sets                        |  102 |       |          0 |     13300 |  0.77 |
 +--------------------------------------------+------+-------+------------+-----------+-------+
 * * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
@@ -181,16 +181,16 @@ Table of Contents
 +----------+------+----------------------+
 | Ref Name | Used |  Functional Category |
 +----------+------+----------------------+
-| FDRE     | 1229 |         Flop & Latch |
-| LUT6     |  419 |                  LUT |
-| LUT3     |  323 |                  LUT |
-| LUT4     |  261 |                  LUT |
-| LUT5     |  247 |                  LUT |
-| LUT2     |  139 |                  LUT |
+| FDRE     | 1225 |         Flop & Latch |
+| LUT6     |  414 |                  LUT |
+| LUT3     |  321 |                  LUT |
+| LUT4     |  260 |                  LUT |
+| LUT5     |  250 |                  LUT |
+| LUT2     |  140 |                  LUT |
 | BIBUF    |  130 |                   IO |
 | FDSE     |  120 |         Flop & Latch |
 | SRL16E   |   91 |   Distributed Memory |
-| LUT1     |   48 |                  LUT |
+| LUT1     |   47 |                  LUT |
 | SRLC32E  |   38 |   Distributed Memory |
 | IBUF     |   33 |                   IO |
 | CARRY4   |   31 |           CarryLogic |

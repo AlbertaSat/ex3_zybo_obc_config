@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
---Date        : Tue Aug 12 12:54:14 2025
+--Date        : Tue Aug 12 13:58:04 2025
 --Host        : mothership running 64-bit Nobara Linux 42 (Workstation Edition)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -3204,8 +3204,8 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
   attribute X_INTERFACE_INFO of GPS_UART_rxd : signal is "xilinx.com:interface:uart:1.0 GPS_UART RxD";
   attribute X_INTERFACE_INFO of GPS_UART_txd : signal is "xilinx.com:interface:uart:1.0 GPS_UART TxD";
-  attribute X_INTERFACE_INFO of HERACLES_UART_rxd : signal is "xilinx.com:interface:uart:1.0 HERACLES_UART ";
-  attribute X_INTERFACE_INFO of HERACLES_UART_txd : signal is "xilinx.com:interface:uart:1.0 HERACLES_UART ";
+  attribute X_INTERFACE_INFO of HERACLES_UART_rxd : signal is "xilinx.com:interface:uart:1.0 HERACLES_UART RxD";
+  attribute X_INTERFACE_INFO of HERACLES_UART_txd : signal is "xilinx.com:interface:uart:1.0 HERACLES_UART TxD";
   attribute X_INTERFACE_INFO of SBAND_I2C_scl_i : signal is "xilinx.com:interface:iic:1.0 SBAND_I2C SCL_I";
   attribute X_INTERFACE_INFO of SBAND_I2C_scl_o : signal is "xilinx.com:interface:iic:1.0 SBAND_I2C SCL_O";
   attribute X_INTERFACE_INFO of SBAND_I2C_scl_t : signal is "xilinx.com:interface:iic:1.0 SBAND_I2C SCL_T";

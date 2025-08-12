@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date             : Tue Aug 12 13:18:46 2025
+| Date             : Tue Aug 12 14:04:51 2025
 | Host             : mothership running 64-bit Nobara Linux 42 (Workstation Edition)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        3 |       --- |             --- |
-| Slice Logic             |    <0.001 |     3232 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |     1126 |     53200 |            2.12 |
-|   Register              |    <0.001 |     1349 |    106400 |            1.27 |
+| Slice Logic             |    <0.001 |     3223 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |     1118 |     53200 |            2.10 |
+|   Register              |    <0.001 |     1345 |    106400 |            1.26 |
 |   CARRY4                |    <0.001 |       31 |     13300 |            0.23 |
 |   LUT as Shift Register |    <0.001 |       93 |     17400 |            0.53 |
 |   F7/F8 Muxes           |    <0.001 |       15 |     53200 |            0.03 |
 |   Others                |     0.000 |      271 |       --- |             --- |
-| Signals                 |     0.001 |     2384 |       --- |             --- |
-| I/O                     |     0.011 |       39 |       125 |           31.20 |
+| Signals                 |     0.001 |     2378 |       --- |             --- |
+| I/O                     |     0.012 |       39 |       125 |           31.20 |
 | PS7                     |     1.399 |        1 |       --- |             --- |
 | Static Power            |     0.141 |          |           |                 |
 | Total                   |     1.557 |          |           |                 |
