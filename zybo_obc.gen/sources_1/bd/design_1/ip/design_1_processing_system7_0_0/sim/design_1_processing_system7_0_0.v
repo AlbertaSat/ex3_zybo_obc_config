@@ -146,9 +146,9 @@ PS_SRSTB,
 PS_CLK, 
 PS_PORB 
 );
-input [27 : 0] GPIO_I;
-output [27 : 0] GPIO_O;
-output [27 : 0] GPIO_T;
+input [24 : 0] GPIO_I;
+output [24 : 0] GPIO_O;
+output [24 : 0] GPIO_T;
 input I2C1_SDA_I;
 output I2C1_SDA_O;
 output I2C1_SDA_T;
@@ -211,7 +211,7 @@ input [11 : 0] M_AXI_GP0_RID;
 input [1 : 0] M_AXI_GP0_BRESP;
 input [1 : 0] M_AXI_GP0_RRESP;
 input [31 : 0] M_AXI_GP0_RDATA;
-input [2 : 0] IRQ_F2P;
+input [3 : 0] IRQ_F2P;
 output FCLK_CLK0;
 output FCLK_RESET0_N;
 input [53 : 0] MIO;

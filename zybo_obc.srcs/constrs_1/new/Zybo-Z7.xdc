@@ -119,7 +119,7 @@ set_property -dict { PACKAGE_PIN V7    IOSTANDARD LVCMOS33     } [get_ports { DF
 set_property -dict { PACKAGE_PIN Y7    IOSTANDARD LVCMOS33     } [get_ports { GPS_UART_txd }]; #IO_L13P_T2_MRCC_13 Sch=jb_p[3]        
 set_property -dict { PACKAGE_PIN Y6    IOSTANDARD LVCMOS33     } [get_ports { GPS_UART_rxd }]; #IO_L13N_T2_MRCC_13 Sch=jb_n[3]        
 set_property -dict { PACKAGE_PIN V6    IOSTANDARD LVCMOS33     } [get_ports { EMIO_GPIO_tri_io[24] }]; #IO_L22P_T3_13 Sch=jb_p[4]             
-set_property -dict { PACKAGE_PIN W6    IOSTANDARD LVCMOS33     } [get_ports { EMIO_GPIO_tri_io[25] }]; #IO_L22N_T3_13 Sch=jb_n[4]             
+#set_property -dict { PACKAGE_PIN W6    IOSTANDARD LVCMOS33     } [get_ports {  }]; #IO_L22N_T3_13 Sch=jb_n[4]             
                                                                                                                                  
                                                                                                                                  
 ##Pmod Header JC                                                                                                                  
@@ -140,8 +140,8 @@ set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33     } [get_ports { SB
 set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33     } [get_ports { SBAND_SPI_MOSI_O }]; #IO_L6N_T0_VREF_34 Sch=jd_n[2]             
 set_property -dict { PACKAGE_PIN U14   IOSTANDARD LVCMOS33     } [get_ports { SBAND_SPI_MISO_I }]; #IO_L11P_T1_SRCC_34 Sch=jd_p[3]            
 set_property -dict { PACKAGE_PIN U15   IOSTANDARD LVCMOS33     } [get_ports { SBAND_SPI_SS_O }]; #IO_L11N_T1_SRCC_34 Sch=jd_n[3]            
-set_property -dict { PACKAGE_PIN V17   IOSTANDARD LVCMOS33     } [get_ports { EMIO_GPIO_tri_io[26] }]; #IO_L21P_T3_DQS_34 Sch=jd_p[4]             
-set_property -dict { PACKAGE_PIN V18   IOSTANDARD LVCMOS33     } [get_ports { EMIO_GPIO_tri_io[27] }]; #IO_L21N_T3_DQS_34 Sch=jd_n[4]             
+set_property -dict { PACKAGE_PIN V17   IOSTANDARD LVCMOS33     } [get_ports { HERACLES_UART_txd }]; #IO_L21P_T3_DQS_34 Sch=jd_p[4]             
+set_property -dict { PACKAGE_PIN V18   IOSTANDARD LVCMOS33     } [get_ports { HERACLES_UART_rxd }]; #IO_L21N_T3_DQS_34 Sch=jd_n[4]             
                                                                                                                                  
                                                                                                                                  
 ##Pmod Header JE                                                                                                                  
@@ -195,3 +195,48 @@ set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33     } [get_ports { EM
 #set_property PACKAGE_PIN W9 [get_ports {netic19_w9}]; #IO_L16N_T2_13
 #set_property PACKAGE_PIN Y9 [get_ports {netic19_y9}]; #IO_L14P_T2_SRCC_13
 
+# GPIO pullup/pulldown settings based on requirements
+# Pulldown settings
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[3]}]    ;# Q7_DFGMKnifeEN
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[4]}]    ;# Q7_StarboardKnifeEN  
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[7]}]    ;# Starboard_IR_Sens
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[12]}]   ;# Port_IR_Sens
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[13]}]   ;# STACK_SBAND_STX_EN
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[14]}]   ;# DFGM_IR_Sens
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[16]}]   ;# TS_RS
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[19]}]   ;# HUB_HS_IND
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[21]}]   ;# CAN_RS
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[22]}]   ;# Q7_PortKnifeEN
+set_property PULLDOWN TRUE [get_ports {EMIO_GPIO_tri_io[23]}]   ;# HUB_SETUP_IND
+
+# Pullup settings  
+set_property PULLUP TRUE [get_ports {EMIO_GPIO_tri_io[17]}]     ;# GPS_RSTN
+set_property PULLUP TRUE [get_ports {EMIO_GPIO_tri_io[18]}]     ;# HUB_RESET_L
+set_property PULLUP TRUE [get_ports {EMIO_GPIO_tri_io[20]}]     ;# CAN_EN
+
+# No pullup/pulldown for remaining GPIO pins (explicitly setting for clarity)
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[0]}]   ;# STACK_UHF_ENABLE
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[0]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[1]}]   ;# SBAND_TR
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[1]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[2]}]   ;# STACK_SBAND_n_RESET
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[2]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[5]}]   ;# SwitchDeployable_S
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[5]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[6]}]   ;# SwitchDeployable_P
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[6]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[8]}]   ;# SP_Alert
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[8]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[9]}]   ;# SP_SHDN
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[9]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[10]}]  ;# GPS_nAlert
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[10]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[11]}]  ;# GPS_SHDN
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[11]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[15]}]  ;# TS_Alert
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[15]}]
+set_property PULLDOWN FALSE [get_ports {EMIO_GPIO_tri_io[24]}]  ;# STACK_GPS_PPS
+set_property PULLUP FALSE [get_ports {EMIO_GPIO_tri_io[24]}]
+
+# Special handling for SPI chip select (active low)
+set_property PULLUP TRUE [get_ports SBAND_SPI_SS_O]

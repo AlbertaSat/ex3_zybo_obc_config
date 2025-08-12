@@ -1,8 +1,8 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
---Date        : Fri Aug  1 20:35:13 2025
---Host        : FAROOQ running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+--Date        : Tue Aug 12 12:54:14 2025
+--Host        : mothership running 64-bit Nobara Linux 42 (Workstation Edition)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -32,7 +32,7 @@ entity design_1_wrapper is
     DDR_we_n : inout STD_LOGIC;
     DFGM_UART_rxd : in STD_LOGIC;
     DFGM_UART_txd : out STD_LOGIC;
-    EMIO_GPIO_tri_io : inout STD_LOGIC_VECTOR ( 27 downto 0 );
+    EMIO_GPIO_tri_io : inout STD_LOGIC_VECTOR ( 24 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
@@ -41,6 +41,8 @@ entity design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     GPS_UART_rxd : in STD_LOGIC;
     GPS_UART_txd : out STD_LOGIC;
+    HERACLES_UART_rxd : in STD_LOGIC;
+    HERACLES_UART_txd : out STD_LOGIC;
     SBAND_I2C_scl_io : inout STD_LOGIC;
     SBAND_I2C_sda_io : inout STD_LOGIC;
     SBAND_SPI_MISO_I : in STD_LOGIC;
@@ -90,13 +92,15 @@ architecture STRUCTURE of design_1_wrapper is
     GPS_UART_txd : out STD_LOGIC;
     DFGM_UART_rxd : in STD_LOGIC;
     DFGM_UART_txd : out STD_LOGIC;
-    EMIO_GPIO_tri_i : in STD_LOGIC_VECTOR ( 27 downto 0 );
-    EMIO_GPIO_tri_o : out STD_LOGIC_VECTOR ( 27 downto 0 );
-    EMIO_GPIO_tri_t : out STD_LOGIC_VECTOR ( 27 downto 0 );
+    EMIO_GPIO_tri_i : in STD_LOGIC_VECTOR ( 24 downto 0 );
+    EMIO_GPIO_tri_o : out STD_LOGIC_VECTOR ( 24 downto 0 );
+    EMIO_GPIO_tri_t : out STD_LOGIC_VECTOR ( 24 downto 0 );
     SBAND_SPI_SCLK_O : out STD_LOGIC;
     SBAND_SPI_MOSI_O : out STD_LOGIC;
     SBAND_SPI_MISO_I : in STD_LOGIC;
-    SBAND_SPI_SS_O : out STD_LOGIC
+    SBAND_SPI_SS_O : out STD_LOGIC;
+    HERACLES_UART_rxd : in STD_LOGIC;
+    HERACLES_UART_txd : out STD_LOGIC
   );
   end component design_1;
   component IOBUF is
@@ -131,9 +135,6 @@ architecture STRUCTURE of design_1_wrapper is
   signal EMIO_GPIO_tri_i_22 : STD_LOGIC_VECTOR ( 22 to 22 );
   signal EMIO_GPIO_tri_i_23 : STD_LOGIC_VECTOR ( 23 to 23 );
   signal EMIO_GPIO_tri_i_24 : STD_LOGIC_VECTOR ( 24 to 24 );
-  signal EMIO_GPIO_tri_i_25 : STD_LOGIC_VECTOR ( 25 to 25 );
-  signal EMIO_GPIO_tri_i_26 : STD_LOGIC_VECTOR ( 26 to 26 );
-  signal EMIO_GPIO_tri_i_27 : STD_LOGIC_VECTOR ( 27 to 27 );
   signal EMIO_GPIO_tri_i_3 : STD_LOGIC_VECTOR ( 3 to 3 );
   signal EMIO_GPIO_tri_i_4 : STD_LOGIC_VECTOR ( 4 to 4 );
   signal EMIO_GPIO_tri_i_5 : STD_LOGIC_VECTOR ( 5 to 5 );
@@ -159,9 +160,6 @@ architecture STRUCTURE of design_1_wrapper is
   signal EMIO_GPIO_tri_io_22 : STD_LOGIC_VECTOR ( 22 to 22 );
   signal EMIO_GPIO_tri_io_23 : STD_LOGIC_VECTOR ( 23 to 23 );
   signal EMIO_GPIO_tri_io_24 : STD_LOGIC_VECTOR ( 24 to 24 );
-  signal EMIO_GPIO_tri_io_25 : STD_LOGIC_VECTOR ( 25 to 25 );
-  signal EMIO_GPIO_tri_io_26 : STD_LOGIC_VECTOR ( 26 to 26 );
-  signal EMIO_GPIO_tri_io_27 : STD_LOGIC_VECTOR ( 27 to 27 );
   signal EMIO_GPIO_tri_io_3 : STD_LOGIC_VECTOR ( 3 to 3 );
   signal EMIO_GPIO_tri_io_4 : STD_LOGIC_VECTOR ( 4 to 4 );
   signal EMIO_GPIO_tri_io_5 : STD_LOGIC_VECTOR ( 5 to 5 );
@@ -187,9 +185,6 @@ architecture STRUCTURE of design_1_wrapper is
   signal EMIO_GPIO_tri_o_22 : STD_LOGIC_VECTOR ( 22 to 22 );
   signal EMIO_GPIO_tri_o_23 : STD_LOGIC_VECTOR ( 23 to 23 );
   signal EMIO_GPIO_tri_o_24 : STD_LOGIC_VECTOR ( 24 to 24 );
-  signal EMIO_GPIO_tri_o_25 : STD_LOGIC_VECTOR ( 25 to 25 );
-  signal EMIO_GPIO_tri_o_26 : STD_LOGIC_VECTOR ( 26 to 26 );
-  signal EMIO_GPIO_tri_o_27 : STD_LOGIC_VECTOR ( 27 to 27 );
   signal EMIO_GPIO_tri_o_3 : STD_LOGIC_VECTOR ( 3 to 3 );
   signal EMIO_GPIO_tri_o_4 : STD_LOGIC_VECTOR ( 4 to 4 );
   signal EMIO_GPIO_tri_o_5 : STD_LOGIC_VECTOR ( 5 to 5 );
@@ -215,9 +210,6 @@ architecture STRUCTURE of design_1_wrapper is
   signal EMIO_GPIO_tri_t_22 : STD_LOGIC_VECTOR ( 22 to 22 );
   signal EMIO_GPIO_tri_t_23 : STD_LOGIC_VECTOR ( 23 to 23 );
   signal EMIO_GPIO_tri_t_24 : STD_LOGIC_VECTOR ( 24 to 24 );
-  signal EMIO_GPIO_tri_t_25 : STD_LOGIC_VECTOR ( 25 to 25 );
-  signal EMIO_GPIO_tri_t_26 : STD_LOGIC_VECTOR ( 26 to 26 );
-  signal EMIO_GPIO_tri_t_27 : STD_LOGIC_VECTOR ( 27 to 27 );
   signal EMIO_GPIO_tri_t_3 : STD_LOGIC_VECTOR ( 3 to 3 );
   signal EMIO_GPIO_tri_t_4 : STD_LOGIC_VECTOR ( 4 to 4 );
   signal EMIO_GPIO_tri_t_5 : STD_LOGIC_VECTOR ( 5 to 5 );
@@ -372,27 +364,6 @@ EMIO_GPIO_tri_iobuf_24: component IOBUF
       O => EMIO_GPIO_tri_i_24(24),
       T => EMIO_GPIO_tri_t_24(24)
     );
-EMIO_GPIO_tri_iobuf_25: component IOBUF
-     port map (
-      I => EMIO_GPIO_tri_o_25(25),
-      IO => EMIO_GPIO_tri_io(25),
-      O => EMIO_GPIO_tri_i_25(25),
-      T => EMIO_GPIO_tri_t_25(25)
-    );
-EMIO_GPIO_tri_iobuf_26: component IOBUF
-     port map (
-      I => EMIO_GPIO_tri_o_26(26),
-      IO => EMIO_GPIO_tri_io(26),
-      O => EMIO_GPIO_tri_i_26(26),
-      T => EMIO_GPIO_tri_t_26(26)
-    );
-EMIO_GPIO_tri_iobuf_27: component IOBUF
-     port map (
-      I => EMIO_GPIO_tri_o_27(27),
-      IO => EMIO_GPIO_tri_io(27),
-      O => EMIO_GPIO_tri_i_27(27),
-      T => EMIO_GPIO_tri_t_27(27)
-    );
 EMIO_GPIO_tri_iobuf_3: component IOBUF
      port map (
       I => EMIO_GPIO_tri_o_3(3),
@@ -481,9 +452,6 @@ design_1_i: component design_1
       DDR_we_n => DDR_we_n,
       DFGM_UART_rxd => DFGM_UART_rxd,
       DFGM_UART_txd => DFGM_UART_txd,
-      EMIO_GPIO_tri_i(27) => EMIO_GPIO_tri_i_27(27),
-      EMIO_GPIO_tri_i(26) => EMIO_GPIO_tri_i_26(26),
-      EMIO_GPIO_tri_i(25) => EMIO_GPIO_tri_i_25(25),
       EMIO_GPIO_tri_i(24) => EMIO_GPIO_tri_i_24(24),
       EMIO_GPIO_tri_i(23) => EMIO_GPIO_tri_i_23(23),
       EMIO_GPIO_tri_i(22) => EMIO_GPIO_tri_i_22(22),
@@ -509,9 +477,6 @@ design_1_i: component design_1
       EMIO_GPIO_tri_i(2) => EMIO_GPIO_tri_i_2(2),
       EMIO_GPIO_tri_i(1) => EMIO_GPIO_tri_i_1(1),
       EMIO_GPIO_tri_i(0) => EMIO_GPIO_tri_i_0(0),
-      EMIO_GPIO_tri_o(27) => EMIO_GPIO_tri_o_27(27),
-      EMIO_GPIO_tri_o(26) => EMIO_GPIO_tri_o_26(26),
-      EMIO_GPIO_tri_o(25) => EMIO_GPIO_tri_o_25(25),
       EMIO_GPIO_tri_o(24) => EMIO_GPIO_tri_o_24(24),
       EMIO_GPIO_tri_o(23) => EMIO_GPIO_tri_o_23(23),
       EMIO_GPIO_tri_o(22) => EMIO_GPIO_tri_o_22(22),
@@ -537,9 +502,6 @@ design_1_i: component design_1
       EMIO_GPIO_tri_o(2) => EMIO_GPIO_tri_o_2(2),
       EMIO_GPIO_tri_o(1) => EMIO_GPIO_tri_o_1(1),
       EMIO_GPIO_tri_o(0) => EMIO_GPIO_tri_o_0(0),
-      EMIO_GPIO_tri_t(27) => EMIO_GPIO_tri_t_27(27),
-      EMIO_GPIO_tri_t(26) => EMIO_GPIO_tri_t_26(26),
-      EMIO_GPIO_tri_t(25) => EMIO_GPIO_tri_t_25(25),
       EMIO_GPIO_tri_t(24) => EMIO_GPIO_tri_t_24(24),
       EMIO_GPIO_tri_t(23) => EMIO_GPIO_tri_t_23(23),
       EMIO_GPIO_tri_t(22) => EMIO_GPIO_tri_t_22(22),
@@ -573,6 +535,8 @@ design_1_i: component design_1
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
       GPS_UART_rxd => GPS_UART_rxd,
       GPS_UART_txd => GPS_UART_txd,
+      HERACLES_UART_rxd => HERACLES_UART_rxd,
+      HERACLES_UART_txd => HERACLES_UART_txd,
       SBAND_I2C_scl_i => SBAND_I2C_scl_i,
       SBAND_I2C_scl_o => SBAND_I2C_scl_o,
       SBAND_I2C_scl_t => SBAND_I2C_scl_t,
