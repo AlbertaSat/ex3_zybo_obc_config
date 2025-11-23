@@ -35,23 +35,23 @@ This project exposes the following interfaces to reflect those outlined in the O
 
 #### GPS_UART: AXI UART
 - Pmod JB pins:
-	- TX: Pin 7 (Y7)
-	- RX: Pin 8 (Y6)
+	- TX: Pin 7 (Y6)
+	- RX: Pin 8 (Y7)
 
 #### DFGM_UART: AXI UART
 - Pmod JB pins:
-	- TX: Pin 3 (U7)
-	- RX: Pin 4 (V7)
+	- TX: Pin 3 (V7)
+	- RX: Pin 4 (U7)
 
 #### HERACLES_UART: AXI UART
 - Pmod JD pins:
-	- TX: Pin 9 (V17)
-	- RX: Pin 10 (V18)
+	- TX: Pin 9 (V18)
+	- RX: Pin 10 (V17)
 
 #### UHF_UART: MIO UART0
 - Pmod JF pins:
-	- TX: Pin 3 (MIO-11)
-	- RX: Pin 2 (MIO-10)
+	- TX: Pin 3 (MIO-10)
+	- RX: Pin 2 (MIO-11)
 
 ### CAN (1)
 
