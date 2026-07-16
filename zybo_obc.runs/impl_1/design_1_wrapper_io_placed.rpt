@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date                      : Tue Aug 12 14:04:36 2025
-| Host                      : mothership running 64-bit Nobara Linux 42 (Workstation Edition)
+| Date                      : Thu Jul 16 12:18:51 2026
+| Host                      : albertasat-03.engineering.ualberta.ca running 64-bit unknown
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
 | Device                    : xc7z020
@@ -391,8 +391,8 @@ Table of Contents
 | V14        |                      | High Range | VCCO_34                 | VCCO        |                    |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | V15        | EMIO_GPIO_tri_io[16] | High Range | IO_L10P_T1_34           | BIDIR       | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      | PULLDOWN  |          |      | NONE             |              |                   |              |
 | V16        |                      | High Range | IO_L18P_T2_34           | User IO     |                    |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| V17        | HERACLES_UART_txd    | High Range | IO_L21P_T3_DQS_34       | OUTPUT      | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| V18        | HERACLES_UART_rxd    | High Range | IO_L21N_T3_DQS_34       | INPUT       | LVCMOS33           |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| V17        | ANT_I2C_sda_io       | High Range | IO_L21P_T3_DQS_34       | BIDIR       | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| V18        | ANT_I2C_scl_io       | High Range | IO_L21N_T3_DQS_34       | BIDIR       | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V19        |                      |            | GND                     | GND         |                    |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | V20        |                      | High Range | IO_L16P_T2_34           | User IO     |                    |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W1         | DDR_dq[26]           |            | PS_DDR_DQ26_502         | INOUT       | SSTL135_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |              |                   |              |

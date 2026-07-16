@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA33DFB31C4857C8B",
+      "boundary_crc": "0x11C0B75497188D7C",
       "device": "xc7z020clg400-1",
       "gen_directory": "../../../../zybo_obc.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -26,12 +26,12 @@
         "m07_couplers": {}
       },
       "xlconcat_0": "",
-      "axi_iic_sband": "",
+      "axi_iic_db": "",
       "axi_uartlite_gps": "",
       "axi_uartlite_dfgm": "",
       "processing_system7_0": "",
       "rst_ps7_0_50M": "",
-      "axi_uartlite_heracles": ""
+      "axi_iic_antenna": ""
     },
     "interface_ports": {
       "DDR": {
@@ -202,42 +202,23 @@
           }
         }
       },
-      "SBAND_I2C": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:iic:1.0",
-        "vlnv": "xilinx.com:interface:iic_rtl:1.0",
-        "port_maps": {
-          "SCL_I": {
-            "physical_name": "SBAND_I2C_scl_i",
-            "direction": "I"
-          },
-          "SCL_O": {
-            "physical_name": "SBAND_I2C_scl_o",
-            "direction": "O"
-          },
-          "SCL_T": {
-            "physical_name": "SBAND_I2C_scl_t",
-            "direction": "O"
-          },
-          "SDA_I": {
-            "physical_name": "SBAND_I2C_sda_i",
-            "direction": "I"
-          },
-          "SDA_O": {
-            "physical_name": "SBAND_I2C_sda_o",
-            "direction": "O"
-          },
-          "SDA_T": {
-            "physical_name": "SBAND_I2C_sda_t",
-            "direction": "O"
-          }
-        }
-      },
       "DB_I2C": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:interface:iic:1.0",
         "vlnv": "xilinx.com:interface:iic_rtl:1.0",
         "port_maps": {
+          "SCL_I": {
+            "physical_name": "DB_I2C_scl_i",
+            "direction": "I"
+          },
+          "SCL_O": {
+            "physical_name": "DB_I2C_scl_o",
+            "direction": "O"
+          },
+          "SCL_T": {
+            "physical_name": "DB_I2C_scl_t",
+            "direction": "O"
+          },
           "SDA_I": {
             "physical_name": "DB_I2C_sda_i",
             "direction": "I"
@@ -249,17 +230,36 @@
           "SDA_T": {
             "physical_name": "DB_I2C_sda_t",
             "direction": "O"
+          }
+        }
+      },
+      "SBAND_I2C": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:iic:1.0",
+        "vlnv": "xilinx.com:interface:iic_rtl:1.0",
+        "port_maps": {
+          "SDA_I": {
+            "physical_name": "SBAND_I2C_sda_i",
+            "direction": "I"
+          },
+          "SDA_O": {
+            "physical_name": "SBAND_I2C_sda_o",
+            "direction": "O"
+          },
+          "SDA_T": {
+            "physical_name": "SBAND_I2C_sda_t",
+            "direction": "O"
           },
           "SCL_I": {
-            "physical_name": "DB_I2C_scl_i",
+            "physical_name": "SBAND_I2C_scl_i",
             "direction": "I"
           },
           "SCL_O": {
-            "physical_name": "DB_I2C_scl_o",
+            "physical_name": "SBAND_I2C_scl_o",
             "direction": "O"
           },
           "SCL_T": {
-            "physical_name": "DB_I2C_scl_t",
+            "physical_name": "SBAND_I2C_scl_t",
             "direction": "O"
           }
         }
@@ -319,17 +319,33 @@
           }
         }
       },
-      "HERACLES_UART": {
+      "ANT_I2C": {
         "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:uart:1.0",
-        "vlnv": "xilinx.com:interface:uart_rtl:1.0",
+        "vlnv_bus_definition": "xilinx.com:interface:iic:1.0",
+        "vlnv": "xilinx.com:interface:iic_rtl:1.0",
         "port_maps": {
-          "RxD": {
-            "physical_name": "HERACLES_UART_rxd",
+          "SCL_I": {
+            "physical_name": "ANT_I2C_scl_i",
             "direction": "I"
           },
-          "TxD": {
-            "physical_name": "HERACLES_UART_txd",
+          "SCL_O": {
+            "physical_name": "ANT_I2C_scl_o",
+            "direction": "O"
+          },
+          "SCL_T": {
+            "physical_name": "ANT_I2C_scl_t",
+            "direction": "O"
+          },
+          "SDA_I": {
+            "physical_name": "ANT_I2C_sda_i",
+            "direction": "I"
+          },
+          "SDA_O": {
+            "physical_name": "ANT_I2C_sda_o",
+            "direction": "O"
+          },
+          "SDA_T": {
+            "physical_name": "ANT_I2C_sda_t",
             "direction": "O"
           }
         }
@@ -1322,11 +1338,19 @@
           }
         }
       },
-      "axi_iic_sband": {
+      "axi_iic_db": {
         "vlnv": "xilinx.com:ip:axi_iic:2.1",
         "xci_name": "design_1_axi_iic_0_0",
         "xci_path": "ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0.xci",
-        "inst_hier_path": "axi_iic_sband"
+        "inst_hier_path": "axi_iic_db",
+        "parameters": {
+          "C_SCL_INERTIAL_DELAY": {
+            "value": "10"
+          },
+          "C_SDA_INERTIAL_DELAY": {
+            "value": "10"
+          }
+        }
       },
       "axi_uartlite_gps": {
         "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
@@ -1335,7 +1359,7 @@
         "inst_hier_path": "axi_uartlite_gps",
         "parameters": {
           "C_BAUDRATE": {
-            "value": "115200"
+            "value": "9600"
           },
           "C_S_AXI_ACLK_FREQ_HZ": {
             "value": "50000000"
@@ -2691,6 +2715,18 @@
           "PCW_SPI_PERIPHERAL_VALID": {
             "value": "1"
           },
+          "PCW_S_AXI_HP0_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP1_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP2_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP3_DATA_WIDTH": {
+            "value": "64"
+          },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
           },
@@ -2764,7 +2800,7 @@
             "value": "0xE0001000"
           },
           "PCW_UART1_BAUD_RATE": {
-            "value": "115200"
+            "value": "921600"
           },
           "PCW_UART1_GRP_FULL_ENABLE": {
             "value": "0"
@@ -3225,14 +3261,20 @@
         "xci_path": "ip/design_1_rst_ps7_0_50M_2/design_1_rst_ps7_0_50M_2.xci",
         "inst_hier_path": "rst_ps7_0_50M"
       },
-      "axi_uartlite_heracles": {
-        "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
-        "xci_name": "design_1_axi_uartlite_0_1",
-        "xci_path": "ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1.xci",
-        "inst_hier_path": "axi_uartlite_heracles",
+      "axi_iic_antenna": {
+        "vlnv": "xilinx.com:ip:axi_iic:2.1",
+        "xci_name": "design_1_axi_iic_0_1",
+        "xci_path": "ip/design_1_axi_iic_0_1/design_1_axi_iic_0_1.xci",
+        "inst_hier_path": "axi_iic_antenna",
         "parameters": {
-          "C_BAUDRATE": {
-            "value": "115200"
+          "C_SCL_INERTIAL_DELAY": {
+            "value": "1"
+          },
+          "C_SDA_INERTIAL_DELAY": {
+            "value": "1"
+          },
+          "IIC_FREQ_KHZ": {
+            "value": "400"
           }
         }
       }
@@ -3240,20 +3282,20 @@
     "interface_nets": {
       "axi_iic_0_IIC": {
         "interface_ports": [
-          "SBAND_I2C",
-          "axi_iic_sband/IIC"
+          "DB_I2C",
+          "axi_iic_db/IIC"
+        ]
+      },
+      "axi_iic_antenna_IIC": {
+        "interface_ports": [
+          "ANT_I2C",
+          "axi_iic_antenna/IIC"
         ]
       },
       "axi_uartlite_0_UART": {
         "interface_ports": [
           "GPS_UART",
           "axi_uartlite_gps/UART"
-        ]
-      },
-      "axi_uartlite_0_UART1": {
-        "interface_ports": [
-          "HERACLES_UART",
-          "axi_uartlite_heracles/UART"
         ]
       },
       "axi_uartlite_2_UART": {
@@ -3282,7 +3324,7 @@
       },
       "processing_system7_0_IIC_1": {
         "interface_ports": [
-          "DB_I2C",
+          "SBAND_I2C",
           "processing_system7_0/IIC_1"
         ]
       },
@@ -3295,19 +3337,19 @@
       "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M00_AXI",
-          "axi_iic_sband/S_AXI"
-        ]
-      },
-      "ps7_0_axi_periph_M01_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M01_AXI",
-          "axi_uartlite_heracles/S_AXI"
+          "axi_iic_db/S_AXI"
         ]
       },
       "ps7_0_axi_periph_M02_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M02_AXI",
           "axi_uartlite_gps/S_AXI"
+        ]
+      },
+      "ps7_0_axi_periph_M03_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M03_AXI",
+          "axi_iic_antenna/S_AXI"
         ]
       },
       "ps7_0_axi_periph_M06_AXI": {
@@ -3326,8 +3368,14 @@
       },
       "axi_iic_SBAND_iic2intc_irpt": {
         "ports": [
-          "axi_iic_sband/iic2intc_irpt",
+          "axi_iic_db/iic2intc_irpt",
           "xlconcat_0/In1"
+        ]
+      },
+      "axi_iic_antenna_iic2intc_irpt": {
+        "ports": [
+          "axi_iic_antenna/iic2intc_irpt",
+          "xlconcat_0/In3"
         ]
       },
       "axi_uartlite_0_interrupt": {
@@ -3340,12 +3388,6 @@
         "ports": [
           "axi_uartlite_dfgm/interrupt",
           "xlconcat_0/In2"
-        ]
-      },
-      "axi_uartlite_heracles_interrupt": {
-        "ports": [
-          "axi_uartlite_heracles/interrupt",
-          "xlconcat_0/In3"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
@@ -3361,12 +3403,12 @@
           "ps7_0_axi_periph/M05_ACLK",
           "ps7_0_axi_periph/M06_ACLK",
           "ps7_0_axi_periph/M07_ACLK",
-          "axi_iic_sband/s_axi_aclk",
+          "axi_iic_db/s_axi_aclk",
           "axi_uartlite_gps/s_axi_aclk",
           "axi_uartlite_dfgm/s_axi_aclk",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "rst_ps7_0_50M/slowest_sync_clk",
-          "axi_uartlite_heracles/s_axi_aclk"
+          "axi_iic_antenna/s_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -3409,10 +3451,10 @@
           "ps7_0_axi_periph/M05_ARESETN",
           "ps7_0_axi_periph/M06_ARESETN",
           "ps7_0_axi_periph/M07_ARESETN",
-          "axi_iic_sband/s_axi_aresetn",
+          "axi_iic_db/s_axi_aresetn",
           "axi_uartlite_gps/s_axi_aresetn",
           "axi_uartlite_dfgm/s_axi_aresetn",
-          "axi_uartlite_heracles/s_axi_aresetn"
+          "axi_iic_antenna/s_axi_aresetn"
         ]
       },
       "xlconcat_0_dout": {
@@ -3428,18 +3470,18 @@
           "Data": {
             "segments": {
               "SEG_axi_iic_0_Reg": {
-                "address_block": "/axi_iic_sband/S_AXI/Reg",
+                "address_block": "/axi_iic_db/S_AXI/Reg",
                 "offset": "0x41600000",
+                "range": "64K"
+              },
+              "SEG_axi_iic_antenna_Reg": {
+                "address_block": "/axi_iic_antenna/S_AXI/Reg",
+                "offset": "0x41610000",
                 "range": "64K"
               },
               "SEG_axi_uartlite_0_Reg": {
                 "address_block": "/axi_uartlite_gps/S_AXI/Reg",
                 "offset": "0x42C00000",
-                "range": "64K"
-              },
-              "SEG_axi_uartlite_0_Reg_1": {
-                "address_block": "/axi_uartlite_heracles/S_AXI/Reg",
-                "offset": "0x42C10000",
                 "range": "64K"
               },
               "SEG_axi_uartlite_2_Reg": {

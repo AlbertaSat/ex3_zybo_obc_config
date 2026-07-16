@@ -2,18 +2,18 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Aug 12 13:58:27 2025
-# Process ID: 2124535
-# Current directory: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1
+# Start of session at: Thu Jul 16 12:08:55 2026
+# Process ID: 3303487
+# Current directory: /home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1
 # Command line: vivado -log design_1_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_pc_0.tcl
-# Log file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.vds
-# Journal file: /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/vivado.jou
-# Running On: mothership, OS: Linux, CPU Frequency: 3800.314 MHz, CPU Physical cores: 24, Host memory: 33568 MB
+# Log file: /home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.vds
+# Journal file: /home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/vivado.jou
+# Running On: albertasat-03.engineering.ualberta.ca, OS: Linux, CPU Frequency: 4092.679 MHz, CPU Physical cores: 4, Host memory: 33340 MB
 #-----------------------------------------------------------
 source design_1_auto_pc_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jacques/Repos/absat/ex3_zybo_obc_config/vivado-library'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jacques/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/albertasat/ex3_zybo_obc_config/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/albertasat/Xilinx/Vivado/2022.2/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_0
 WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 7da67d145a13ed93) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips design_1_auto_pc_0]'
 Command: synth_design -top design_1_auto_pc_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
@@ -23,81 +23,81 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2124624
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jacques/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-7075] Helper process launched with PID 3303628
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/albertasat/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2202.535 ; gain = 371.770 ; free physical = 8194 ; free virtual = 42486
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1360.735; parent = 1173.804; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 3829.262; parent = 2208.477; children = 1620.785
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2182.848 ; gain = 369.801 ; free physical = 6272 ; free virtual = 32903
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1265.529; parent = 1112.792; children = 152.737
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3781.656; parent = 2189.789; children = 1591.867
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_axi_protocol_converter' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_aw_channel' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_cmd_translator' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_incr_cmd' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_incr_cmd' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wrap_cmd' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wrap_cmd' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_cmd_translator' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
-INFO: [Synth 8-226] default block is never used [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_aw_channel' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_b_channel' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_b_channel' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_ar_channel' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
-INFO: [Synth 8-226] default block is never used [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_ar_channel' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_r_channel' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized1' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
-INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized2' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized2' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_r_channel' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
-WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'SI_REG' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
-WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice__parameterized0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
-INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized3' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized3' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized4' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized4' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized5' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized5' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized6' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized6' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice__parameterized0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
-WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'MI_REG' [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
-WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
-INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_axi_protocol_converter' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
-WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_axi_protocol_converter' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_aw_channel' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_cmd_translator' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_incr_cmd' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_incr_cmd' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3091]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wrap_cmd' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wrap_cmd' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_cmd_translator' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-226] default block is never used [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3277]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3223]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_aw_channel' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3970]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_b_channel' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_b_channel' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3605]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_ar_channel' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-226] default block is never used [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3395]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3333]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_ar_channel' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4081]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_r_channel' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized1' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized1' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized2' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_simple_fifo__parameterized2' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2815]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s_r_channel' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3810]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized1' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized2' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'SI_REG' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4392]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice__parameterized0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized3' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized3' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized4' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized4' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized5' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized5' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized6' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice__parameterized6' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axi_register_slice__parameterized0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_27_axi_register_slice' is unconnected for instance 'MI_REG' [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_27_axi_register_slice' has 93 connections declared, but only 92 given [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4647]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_b2s' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4225]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_27_axi_protocol_converter' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4807]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3383]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3384]
 WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_27_axic_register_slice__parameterized6 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_27_axic_register_slice__parameterized6 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_27_axic_register_slice__parameterized3 is either unconnected or has no load
@@ -200,63 +200,63 @@ WARNING: [Synth 8-7129] Port axlen[6] in module axi_protocol_converter_v2_1_27_b
 WARNING: [Synth 8-7129] Port axlen[5] in module axi_protocol_converter_v2_1_27_b2s_wrap_cmd is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2381.441 ; gain = 550.676 ; free physical = 8335 ; free virtual = 42577
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1360.735; parent = 1173.804; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4002.230; parent = 2381.445; children = 1620.785
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2362.754 ; gain = 549.707 ; free physical = 5985 ; free virtual = 32618
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 152.737
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3954.625; parent = 2362.758; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2396.285 ; gain = 565.520 ; free physical = 8329 ; free virtual = 42571
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1360.735; parent = 1173.804; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4017.074; parent = 2396.289; children = 1620.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2377.598 ; gain = 564.551 ; free physical = 5971 ; free virtual = 32604
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 152.737
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3969.469; parent = 2377.602; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2396.285 ; gain = 565.520 ; free physical = 8330 ; free virtual = 42571
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1360.735; parent = 1173.804; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4017.074; parent = 2396.289; children = 1620.785
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2377.598 ; gain = 564.551 ; free physical = 5967 ; free virtual = 32600
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 152.737
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3969.469; parent = 2377.602; children = 1591.867
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2396.285 ; gain = 0.000 ; free physical = 8321 ; free virtual = 42563
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2377.598 ; gain = 0.000 ; free physical = 5948 ; free virtual = 32581
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2520.035 ; gain = 0.000 ; free physical = 8292 ; free virtual = 42451
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2508.348 ; gain = 0.000 ; free physical = 5880 ; free virtual = 32514
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2520.035 ; gain = 0.000 ; free physical = 8296 ; free virtual = 42454
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2508.348 ; gain = 0.000 ; free physical = 5876 ; free virtual = 32514
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/jacques/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/albertasat/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8310 ; free virtual = 42415
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1368.456; parent = 1181.556; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 5990 ; free virtual = 32643
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 152.737
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8310 ; free virtual = 42415
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1368.456; parent = 1181.556; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6004 ; free virtual = 32656
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 152.737
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8310 ; free virtual = 42415
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1368.456; parent = 1181.556; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6004 ; free virtual = 32656
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 152.737
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm'
@@ -279,9 +279,9 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8310 ; free virtual = 42416
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1368.456; parent = 1181.556; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6014 ; free virtual = 32668
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 152.737
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -333,36 +333,36 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-INFO: [Synth 8-3936] Found unconnected internal register 'gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
-INFO: [Synth 8-3936] Found unconnected internal register 'gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [/home/albertasat/ex3_zybo_obc_config/zybo_obc.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8354 ; free virtual = 42412
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1368.456; parent = 1181.556; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 5774 ; free virtual = 32432
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 152.737
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8269 ; free virtual = 42338
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1468.798; parent = 1281.929; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6157 ; free virtual = 32810
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 159.237
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8246 ; free virtual = 42317
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1490.700; parent = 1303.831; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6176 ; free virtual = 32829
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 159.237
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8245 ; free virtual = 42316
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1491.345; parent = 1304.476; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6177 ; free virtual = 32830
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 159.237
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -380,49 +380,49 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8249 ; free virtual = 42320
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1491.767; parent = 1304.897; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6523 ; free virtual = 33173
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 168.452
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8249 ; free virtual = 42320
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1491.767; parent = 1304.897; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6524 ; free virtual = 33173
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 168.452
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8249 ; free virtual = 42320
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1491.810; parent = 1304.940; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6524 ; free virtual = 33173
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 168.452
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8249 ; free virtual = 42320
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1491.876; parent = 1305.007; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6524 ; free virtual = 33173
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 168.452
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8249 ; free virtual = 42320
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1491.876; parent = 1305.007; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6524 ; free virtual = 33173
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 168.452
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8249 ; free virtual = 42320
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1491.876; parent = 1305.007; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6524 ; free virtual = 33173
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 168.452
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -470,20 +470,20 @@ Report Cell Usage:
 |11    |FDSE    |    16|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8249 ; free virtual = 42320
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1491.876; parent = 1305.007; children = 186.932
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 4108.809; parent = 2488.023; children = 1620.785
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6524 ; free virtual = 33173
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1419.819; parent = 1267.091; children = 168.452
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4068.203; parent = 2476.336; children = 1591.867
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2520.035 ; gain = 565.520 ; free physical = 8300 ; free virtual = 42371
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2520.035 ; gain = 689.270 ; free physical = 8304 ; free virtual = 42375
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2508.348 ; gain = 564.551 ; free physical = 6574 ; free virtual = 33223
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2508.348 ; gain = 695.301 ; free physical = 6574 ; free virtual = 33223
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2520.035 ; gain = 0.000 ; free physical = 8359 ; free virtual = 42460
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2508.348 ; gain = 0.000 ; free physical = 6677 ; free virtual = 33326
 INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2520.035 ; gain = 0.000 ; free physical = 8330 ; free virtual = 42430
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2508.348 ; gain = 0.000 ; free physical = 6625 ; free virtual = 33274
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -491,9 +491,9 @@ Synth Design complete, checksum: 189733f8
 INFO: [Common 17-83] Releasing license: Synthesis
 90 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2520.035 ; gain = 979.652 ; free physical = 8556 ; free virtual = 42657
-INFO: [Common 17-1381] The checkpoint '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.348 ; gain = 1027.895 ; free physical = 6796 ; free virtual = 33445
+INFO: [Common 17-1381] The checkpoint '/home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 23 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/jacques/Repos/absat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/albertasat/ex3_zybo_obc_config/zybo_obc.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_auto_pc_0_utilization_synth.rpt -pb design_1_auto_pc_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 12 13:58:55 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 16 12:09:40 2026...

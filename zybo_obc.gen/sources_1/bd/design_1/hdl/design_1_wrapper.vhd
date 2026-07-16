@@ -1,8 +1,8 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
---Date        : Tue Aug 12 13:58:04 2025
---Host        : mothership running 64-bit Nobara Linux 42 (Workstation Edition)
+--Date        : Thu Jul 16 12:08:34 2026
+--Host        : albertasat-03.engineering.ualberta.ca running 64-bit unknown
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -13,6 +13,8 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1_wrapper is
   port (
+    ANT_I2C_scl_io : inout STD_LOGIC;
+    ANT_I2C_sda_io : inout STD_LOGIC;
     DB_I2C_scl_io : inout STD_LOGIC;
     DB_I2C_sda_io : inout STD_LOGIC;
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
@@ -41,8 +43,6 @@ entity design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     GPS_UART_rxd : in STD_LOGIC;
     GPS_UART_txd : out STD_LOGIC;
-    HERACLES_UART_rxd : in STD_LOGIC;
-    HERACLES_UART_txd : out STD_LOGIC;
     SBAND_I2C_scl_io : inout STD_LOGIC;
     SBAND_I2C_sda_io : inout STD_LOGIC;
     SBAND_SPI_MISO_I : in STD_LOGIC;
@@ -76,18 +76,18 @@ architecture STRUCTURE of design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    SBAND_I2C_scl_i : in STD_LOGIC;
-    SBAND_I2C_scl_o : out STD_LOGIC;
-    SBAND_I2C_scl_t : out STD_LOGIC;
-    SBAND_I2C_sda_i : in STD_LOGIC;
-    SBAND_I2C_sda_o : out STD_LOGIC;
-    SBAND_I2C_sda_t : out STD_LOGIC;
-    DB_I2C_sda_i : in STD_LOGIC;
-    DB_I2C_sda_o : out STD_LOGIC;
-    DB_I2C_sda_t : out STD_LOGIC;
     DB_I2C_scl_i : in STD_LOGIC;
     DB_I2C_scl_o : out STD_LOGIC;
     DB_I2C_scl_t : out STD_LOGIC;
+    DB_I2C_sda_i : in STD_LOGIC;
+    DB_I2C_sda_o : out STD_LOGIC;
+    DB_I2C_sda_t : out STD_LOGIC;
+    SBAND_I2C_sda_i : in STD_LOGIC;
+    SBAND_I2C_sda_o : out STD_LOGIC;
+    SBAND_I2C_sda_t : out STD_LOGIC;
+    SBAND_I2C_scl_i : in STD_LOGIC;
+    SBAND_I2C_scl_o : out STD_LOGIC;
+    SBAND_I2C_scl_t : out STD_LOGIC;
     GPS_UART_rxd : in STD_LOGIC;
     GPS_UART_txd : out STD_LOGIC;
     DFGM_UART_rxd : in STD_LOGIC;
@@ -95,8 +95,12 @@ architecture STRUCTURE of design_1_wrapper is
     EMIO_GPIO_tri_i : in STD_LOGIC_VECTOR ( 24 downto 0 );
     EMIO_GPIO_tri_o : out STD_LOGIC_VECTOR ( 24 downto 0 );
     EMIO_GPIO_tri_t : out STD_LOGIC_VECTOR ( 24 downto 0 );
-    HERACLES_UART_rxd : in STD_LOGIC;
-    HERACLES_UART_txd : out STD_LOGIC;
+    ANT_I2C_scl_i : in STD_LOGIC;
+    ANT_I2C_scl_o : out STD_LOGIC;
+    ANT_I2C_scl_t : out STD_LOGIC;
+    ANT_I2C_sda_i : in STD_LOGIC;
+    ANT_I2C_sda_o : out STD_LOGIC;
+    ANT_I2C_sda_t : out STD_LOGIC;
     SBAND_SPI_SCLK_O : out STD_LOGIC;
     SBAND_SPI_MOSI_O : out STD_LOGIC;
     SBAND_SPI_MISO_I : in STD_LOGIC;
@@ -111,6 +115,12 @@ architecture STRUCTURE of design_1_wrapper is
     IO : inout STD_LOGIC
   );
   end component IOBUF;
+  signal ANT_I2C_scl_i : STD_LOGIC;
+  signal ANT_I2C_scl_o : STD_LOGIC;
+  signal ANT_I2C_scl_t : STD_LOGIC;
+  signal ANT_I2C_sda_i : STD_LOGIC;
+  signal ANT_I2C_sda_o : STD_LOGIC;
+  signal ANT_I2C_sda_t : STD_LOGIC;
   signal DB_I2C_scl_i : STD_LOGIC;
   signal DB_I2C_scl_o : STD_LOGIC;
   signal DB_I2C_scl_t : STD_LOGIC;
@@ -224,6 +234,20 @@ architecture STRUCTURE of design_1_wrapper is
   signal SBAND_I2C_sda_o : STD_LOGIC;
   signal SBAND_I2C_sda_t : STD_LOGIC;
 begin
+ANT_I2C_scl_iobuf: component IOBUF
+     port map (
+      I => ANT_I2C_scl_o,
+      IO => ANT_I2C_scl_io,
+      O => ANT_I2C_scl_i,
+      T => ANT_I2C_scl_t
+    );
+ANT_I2C_sda_iobuf: component IOBUF
+     port map (
+      I => ANT_I2C_sda_o,
+      IO => ANT_I2C_sda_io,
+      O => ANT_I2C_sda_i,
+      T => ANT_I2C_sda_t
+    );
 DB_I2C_scl_iobuf: component IOBUF
      port map (
       I => DB_I2C_scl_o,
@@ -429,6 +453,12 @@ SBAND_I2C_sda_iobuf: component IOBUF
     );
 design_1_i: component design_1
      port map (
+      ANT_I2C_scl_i => ANT_I2C_scl_i,
+      ANT_I2C_scl_o => ANT_I2C_scl_o,
+      ANT_I2C_scl_t => ANT_I2C_scl_t,
+      ANT_I2C_sda_i => ANT_I2C_sda_i,
+      ANT_I2C_sda_o => ANT_I2C_sda_o,
+      ANT_I2C_sda_t => ANT_I2C_sda_t,
       DB_I2C_scl_i => DB_I2C_scl_i,
       DB_I2C_scl_o => DB_I2C_scl_o,
       DB_I2C_scl_t => DB_I2C_scl_t,
@@ -535,8 +565,6 @@ design_1_i: component design_1
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
       GPS_UART_rxd => GPS_UART_rxd,
       GPS_UART_txd => GPS_UART_txd,
-      HERACLES_UART_rxd => HERACLES_UART_rxd,
-      HERACLES_UART_txd => HERACLES_UART_txd,
       SBAND_I2C_scl_i => SBAND_I2C_scl_i,
       SBAND_I2C_scl_o => SBAND_I2C_scl_o,
       SBAND_I2C_scl_t => SBAND_I2C_scl_t,

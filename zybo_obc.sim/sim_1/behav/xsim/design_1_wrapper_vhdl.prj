@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../zybo_obc.ip_user_files/bd/design_1/ip/design_1_axi_iic_0_0/sim/design_1_axi_iic_0_0.vhd" \
+"../../../../zybo_obc.ip_user_files/bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd" \
+"../../../../zybo_obc.ip_user_files/bd/design_1/ip/design_1_axi_uartlite_2_0/sim/design_1_axi_uartlite_2_0.vhd" \
+"../../../../zybo_obc.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_50M_2/sim/design_1_rst_ps7_0_50M_2.vhd" \
+"../../../../zybo_obc.ip_user_files/bd/design_1/ip/design_1_axi_uartlite_0_1/sim/design_1_axi_uartlite_0_1.vhd" \
+"../../../../zybo_obc.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../zybo_obc.ip_user_files/bd/design_1/ip/design_1_axi_iic_0_1/sim/design_1_axi_iic_0_1.vhd" \
+"../../../../zybo_obc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

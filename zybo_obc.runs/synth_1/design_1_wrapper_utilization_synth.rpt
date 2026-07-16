@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Tue Aug 12 13:59:28 2025
-| Host         : mothership running 64-bit Nobara Linux 42 (Workstation Edition)
+| Date         : Thu Jul 16 12:18:00 2026
+| Host         : albertasat-03.engineering.ualberta.ca running 64-bit unknown
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : xc7z020clg400-1
@@ -148,9 +148,9 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| IBUF     |   33 |                  IO |
-| OBUFT    |   29 |                  IO |
-| OBUF     |    6 |                  IO |
+| IBUF     |   34 |                  IO |
+| OBUFT    |   31 |                  IO |
+| OBUF     |    5 |                  IO |
 +----------+------+---------------------+
 
 
@@ -164,8 +164,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | design_1_rst_ps7_0_50M_2        |    1 |
 | design_1_processing_system7_0_0 |    1 |
 | design_1_axi_uartlite_2_0       |    1 |
-| design_1_axi_uartlite_0_1       |    1 |
 | design_1_axi_uartlite_0_0       |    1 |
+| design_1_axi_iic_0_1            |    1 |
 | design_1_axi_iic_0_0            |    1 |
 | design_1_auto_pc_0              |    1 |
 +---------------------------------+------+
