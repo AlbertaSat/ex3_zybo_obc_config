@@ -15,14 +15,16 @@ This project exposes the following interfaces to reflect those outlined in `EX3-
 	- Pmod JF pins
 		- SDA: 10
 		- SCL: 9
-- EMIO I2C1 (Hyperion)
-	- Pmod JB pins
-		- SDA: 2
-		- SCL: 1
-- AXI I2C0 (S-Band)
+- EMIO I2C1 (S-Band)
 	- Pmod JD pins
 		- SDA: 2
 		- SCL: 1
+- AXI I2C0 (DB)
+	- Pmod JB pins
+		- SDA: 2
+		- SCL: 1
+
+Note: An external `ANT_I2C` interface has been added to match the latest ICD.
 
 ### SPI (3)
 
@@ -54,6 +56,7 @@ Note: AXI SPI has been used instead of putting PS SPI0 through EMIO as it turned
 	- Pmod JB pins
 		- TX: 8
 		- RX: 9
+
 - AXI UART0 (UHF)
 	- Pmod JB pins
 		- TX: 4
@@ -67,11 +70,12 @@ Note: AXI SPI has been used instead of putting PS SPI0 through EMIO as it turned
 
 ### GPIO
 
-16 GPIO pins
+25 GPIO pins
 
 Pmod JE -> GPIO_0[0:7]
 Pmod JA -> GPIO_0[8:15]
-
+Pmod JC -> GPIO_0[16:23]
+Pmod JB -> GPIO_0[24]
 
 ## IP Blocks:
 
@@ -81,6 +85,6 @@ TBD
 
 ### Synthesis not using correct paths for certain IPs
 
-When runnning design synthesis on a new machine it will, for some reason, get confused on where to find some files. Using the paths from the previously machine which causes the synthesis job to fail. 
+When runnning design synthesis on a new machine it will, for some reason, get confused on where to find some files. Using the paths from the previously machine which causes the synthesis job to fail.
 
 To fix this, go to `Tools > Settings > IP` and either clear the cache or disable it.
